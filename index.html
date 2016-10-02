@@ -915,7 +915,7 @@ Selects any &lt;li&gt; element that is a descendant of any element with an id th
   &lt;li&gt;NutriGrain&lt;li&gt;
 &lt;/ul&gt;
 </code></pre>
-<p>Tip: Try it out in the <a href="http://penguin.theopalgroup.com/cgi-bin/css3explainer/selectoracle.py">Selectoracle</a>.</p>
+<p>Tip: Try it out in the <a href="http://tux.theopalgroup.com/cgi-bin/css3explainer/selectoracle.py">Selectoracle</a>.</p>
    </section>
    
     <section>
@@ -1293,12 +1293,12 @@ text-indent: 20px;
 <pre><code class="html">
 &lt;html&gt;
 &lt;head&gt;
-<em>&lt;style&gt;
+&lt;style&gt;
 body {
   color: yellow;
   background-color: black;
 }
-&lt;/style&gt;</em>
+&lt;/style&gt;
 &lt;/head&gt;
 </code></pre>
     </section>
@@ -1326,11 +1326,11 @@ body {
      <p>CSS styles can be assigned to individual HTML elements via the <code>style</code> attribute:</p>
 
 <pre><code class="html">
-&lt;tag <strong>style="property1: value; property2: value;"</strong>&gt; &lt;/tag&gt;
+&lt;tag style="property1: value; property2: value;"&gt; &lt;/tag&gt;
 </code></pre>
 
 <pre><code class="html">
-&lt;h1 <strong>style="color:red; text-decoration: underline;"</strong>&gt;Hello&lt;/h1&gt;
+&lt;h1 style="color:red; text-decoration: underline;"&gt;Hello&lt;/h1&gt;
 </code></pre>
 
 <p>Inline styles will have precedence over all other styles. Inline CSS should be avoided as it increases maintenance cost and blurs line between presentation and content.</p>
@@ -1345,6 +1345,15 @@ body {
    </section>
 
    <section>
+     <h2>Exercise Time!</h2>
+     <ul>
+       <li>Create a folder called GDI, and move the @handleGDI.html file you have been working on into that file</li>
+       <li>Open the entire folder in VSC and create a GDI.css file</li>
+      </ul>
+      <img src="images/gdicss.png" width="500px" height="450px">
+   </section>
+
+   <section>
       <h2>CSS: Layout</h2> 
    </section>
      
@@ -1352,13 +1361,13 @@ body {
        <h2>Overview: CSS Layout</h2>
        <p>All web layouts are accomplished with block elements. Designers use blocks, most often <div> elements, to create rectangular areas into which all content fits. Here is an overview:</p>
        <ul>
-         <li>Total area: The space an element occupies and affects</li>
-         <ul>
-           <li>Margin, width, height, padding, border</li>
-         </ul>
          <li>Display</li>
          <ul>
            <li>block, inline, inline-block</li>
+         </ul>
+         <li>Total area: The space an element occupies and affects</li>
+         <ul>
+           <li>Margin, width, height, padding, border</li>
          </ul>
          <li>Float</li>
          <li>Positioning</li>
@@ -1393,61 +1402,7 @@ body {
 <pre><code class="html">&lt;div&gt; &lt;p&gt;Hello&lt;/p&gt; &lt;p&gt;World&lt;/p&gt; &lt;/div&gt; </code></pre>
 <pre><code class="html">&lt;div&gt; Hello &lt;a href="world.com"&gt;World &lt;/a&gt;! &lt;/div&gt; </code></pre>
     </section>
-   
-    <section>
-      <h2>Width &amp; Height</h2>
-      <p>The <code>width</code> and <code>height</code> properties can be used to resize block level elements and <code>IMG</code> elements.</p>
-<p>A narrow div:</p>
-<pre><code class="html">
-&lt;div style="<b>width:30px;</b>"&gt;Hello World!&lt;/div&gt;
-</code></pre>
-<div style="width:30px;">Hello World!</div>
-<p>A distorted image:</p>
-<pre><code class="html">
-&lt;img style="<b>width:100px; height: 30px;</b>" url="fox.jpg"&gt;
-</code></pre>
-<img style="width:100px; height: 50px;" src="http://www.voicesthatmatter.com/gwt2007/images/speakers/fox125.jpg">
-    </section>
-   
-    <section>
-      <h2>Overflow</h2>
-      <p>The <code>overflow</code> property specifies what happens when content overflows the specified dimensions. The default is "visible", which means it flows outside.</p>
-<pre><code class="html">&lt;div style="height: 25px; "&gt;Hi!&lt;/div&gt;</code></pre>
-<div style="height: 15px; background-color:yellow;">
-Hi!
-</div>
-<p>The "hidden" value will trim the content at the border:</p>
-<pre><code class="html">&lt;div style="height: 25px; <b>overflow:hidden;</b>"&gt;Hi!&lt;/div&gt;
-</code></pre>
-<div style="height: 15px; background-color:yellow; overflow: hidden;">
-Hi!
-</div>
-    </section>
-    
-    <section>
-      <h2>Overflow: Auto</h2>
-      <p>The "auto" value can be used to tell the browser add scrollbars *if* the content overflows.</p>
-<pre><code class="html">
-&lt;div style="<b>overflow: auto;</b> width: 60px; height: 25px;  "&gt;
-  Hello World&lt;/div&gt;
-</code></pre>
-<div style="width: 60px; height: 50px; background-color:yellow; overflow: auto;">
-Hello World
-</div>
-<p>The overflow-y and overflow-x properties can be used to specify different settings for each direction.</p>
-<pre><code class="html">
-&lt;div style="<b>overflow-x: auto; overflow-y: hidden;</b>
-  width: 60px; height: 25px;"&gt; Hello World&lt;/div&gt;
-</code></pre>
-<div style="width: 60px; height: 50px; background-color:yellow; overflow-x: auto; overflow-y: hidden;">
-Hello World
-</div>
-    </section>
-    
-    <section>
-      <h2>Exercise Time</h2>
-    </section>
-   
+  
     <section>
       <h2>Box Model</h2>
     </section>
@@ -1461,14 +1416,14 @@ Hello World
 
     <section>
      <h2>Things to know:</h2>
-     <p>In a document, each element is represented as a rectangular box. Determining the size, properties — like its color, background, borders aspect — and the position of these boxes is the goal of the rendering engine.</p>
-     <p>In CSS, each of these rectangular boxes is described using the standard box model. This model describes the content of the space taken by an element. Each box has four edges: the margin edge, border edge, padding edge, and content edge.</p>
+     <p class="fragment">In a document, each element is represented as a rectangular box. Determining the size, properties — like its color, background, borders aspect — and the position of these boxes is the goal of the rendering engine.</p>
+     <p class="fragment">In CSS, each of these rectangular boxes is described using the standard box model. This model describes the content of the space taken by an element. Each box has four edges: the margin edge, border edge, padding edge, and content edge.</p>
    </section>
 
    <section>
      <h2>Width</h2>
-     <p>Total width is how much horizontal space a block occupies. This includes the block’s margin, border, and padding. Calculating width, padding and margin is often the biggest headache for designers, but it's easy to see how they work if you use the box model. </p>
-     <p>The box model consists of the properties margin, border, and padding.</p>
+     <p class="fragment">Total width is how much horizontal space a block occupies. This includes the block’s margin, border, and padding. Calculating width, padding and margin is often the biggest headache for designers, but it's easy to see how they work if you use the box model. </p>
+     <p class= "fragment">The box model consists of the properties margin, border, and padding.</p>
    </section>
     
     <section>
@@ -1493,13 +1448,13 @@ margin-top: 10px;
       <p>If the margin is set to "auto" on a box that has a width, it will take up as much space as possible.</p>
 <p>A centered box:</p>
 <pre><code class="html">
-&lt;div style="<b>margin:auto; width:300px;</b>"&gt;Hi&lt;/div&gt;
+&lt;div style="margin:auto; width:300px;"&gt;Hi&lt;/div&gt;
 </code></pre>
 <div style="margin:auto; width:300px; border:1px solid red;">Hi</div>
 <p>A flush-right box:</p>
 <pre><code class="html">
-&lt;div style="<b>margin-left:auto; margin-right:5px;
-  width:300px;</b>"&gt; Hi&lt;/div&gt;
+&lt;div style="margin-left:auto; margin-right:5px;
+  width:300px;"&gt; Hi&lt;/div&gt;
 </code></pre>
 <div style="margin-left:auto; margin-right:5px;  width:300px; border:1px solid red;">Hi</div>
     </section>
@@ -1622,7 +1577,7 @@ padding: 10px 5px 3px 20px;
       <h2>Position: Relative</h2>
        <p>The "relative" value will still put the element in the normal flow, but then offset it according to top/left/right/bottom properties.</p>
 <pre><code class="html">
-&lt;div style="<b>position: relative; left: 80px; top: 20px;</b>
+&lt;div style="position: relative; left: 80px; top: 20px;
   height: 100px; background-color: yellow;"&gt;
   Hello, hi!
 &lt;/div&gt;
@@ -1634,13 +1589,13 @@ padding: 10px 5px 3px 20px;
       <h2>Position: Absolute</h2>
       <p>The "absolute" value will take the element out of the normal flow and position it in relation to the window (or the closest non-static element).</p>
 <pre><code class="html">
-&lt;div style="<b>position: absolute; top: 10px; right: 10px;</b> 
+&lt;div style="position: absolute; top: 10px; right: 10px;
   background-color: yellow"&gt;
  Up here
 &lt;/div&gt;
 </code></pre>
 <pre><code class="html">
-&lt;div style="<b>position: absolute; bottom: 10px; left:60px;</b> 
+&lt;div style="position: absolute; bottom: 10px; left:60px;
   background-color: green"&gt;
  Down here
 &lt;/div&gt;
@@ -1660,7 +1615,7 @@ padding: 10px 5px 3px 20px;
 &lt;div style="position: absolute; bottom: 10px; left:60px; 
   background-color: green"&gt; Bottom &lt;/div&gt;
 &lt;div style="position: absolute; bottom: 15px; left:60px; 
-  background-color: green; <b>z-index: 2;</b>"&gt; Top &lt;/div&gt;
+  background-color: green; z-index: 2;"&gt; Top &lt;/div&gt;
 </code></pre>
 
 <div style="position: absolute; bottom: 20px; left:60px; 
@@ -1749,13 +1704,20 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
     </section>
 
     <section>
+      <h2>CSS Layout Review</h2>
+      <p>Go through at your own pace</p>
+      <a href="http://learnlayout.com/">Click here</a>
+    </section>
+
+    <section>
       <h2>Exercise Time</h2>
+      <a href="https://docs.google.com/a/anniecannons.com/document/d/1DcGTRA_Rnp4H4A5W_M5XX3nChUI9Zd6GaG5d83Qb_a8/edit?usp=sharing">Click here</a>
     </section>
     
     <section>
       <h2>Cross-browser Compliance</h2>
-      <p>Keep in mind that internet browsers have their own default styles. So, even if you didn't write any CSS, the default style of the browser will still be applied when the content is displayed on the page.</p>
-      <p> One thing to be aware of is that different browsers may apply a small subset of these rules differently. That is why, as a front-end developer, you have to be aware of <span style="color:yellow">'cross-browser compliance'</span> issues. These are issues that we may explore more fully in future lessons. But it is important to know about this from the outset.</p>
+      <p class="fragment">Keep in mind that internet browsers have their own default styles. So, even if you didn't write any CSS, the default style of the browser will still be applied when the content is displayed on the page.</p>
+      <p class="fragment"> One thing to be aware of is that different browsers may apply a small subset of these rules differently. That is why, as a front-end developer, you have to be aware of <span style="color:yellow">'cross-browser compliance'</span> issues. These are issues that we may explore more fully in future lessons. But it is important to know about this from the outset.</p>
     </section>
 
     <section>
@@ -1792,12 +1754,33 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
          <li class="fragment">What are the different ways you can add CSS to your webpage?</li>
          <li class="fragment">What is the difference between a selector, property, and value in CSS?</li>
          <li class="fragment">What are the different types of selectors?</li>
-         <li class="fragment">How do you write an id in your html for a <p> element? How do you write it in CSS?</li>
+         <li class="fragment">How do you write an id in your html for a p element? How do you write it in CSS?</li>
      </ol>
      </section>
 
      <section>
        <h2>Cross-Device CSS</h2>
+     </section>
+
+     <section>
+       <h2>Responsive Design</h2>
+       <p>What is responsive design?</p>
+       <ul>
+         <li class="fragment">Responsive web design is a collection of techniques for building websites that work at multiple screen sizes.</li>
+         <li class="fragment">Previously, most web professionals would often create a mobile version of their site and a desktop version, which means they would have to maintain two separate websites, or worse, the site wouldn't work on mobile at all.</li>
+       </ul>
+     </section>
+
+     <section>
+       <h2>Responsive Design</h2>
+       <p class="fragment">Prior to responsive web design, most web designers thought in terms of print design.The layout was precisely controlled in fixed pixel-based units, and the goal was to make websites look exactly the same in every browser.</p>
+       <p class="fragment">So, instead of thinking about layout in terms of fixed values, we must think in terms of ratios or percentages.</p>
+     </section>
+
+     <section>
+       <h2>Media Queries</h2>
+       <p>Media queries are CSS rules that help us include CSS code only when certain conditions are met. These conditions are called media features. And in the case of responsive web design, the media feature most commonly used is width, or more specifically, min or minimum width.<p>
+         <p>In responsive web design, you can think of a breakpoint as a width where the current layout no longer works and the layout breaks. If the layout breaks, then it necessitates a media query that adjusts the layout.</p>
      </section>
 
     <section>
@@ -1814,11 +1797,6 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
 &lt;link rel="stylesheet" media="&lt;media types&gt;
    and &lt;media features&gt;" href="alternative.css" /&gt;
 </code></pre>
-
-  <aside class="notes">
-  https://developer.mozilla.org/en/CSS/@media#Media_groups
-  https://developer.mozilla.org/en/CSS/Media_queries
-  </aside>
      </section>
 
      <section>
@@ -1854,97 +1832,106 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
   }
 }
 </code></pre>
-<p><a href="http://css-tricks.com/css-media-queries/">See here</a> <a href="http://css-tricks.com/resolution-specific-stylesheets/">And here</a> </p>
      </section>
 
      <section>
-       <h2>Resolution Testing</h2>
-        <p>Besides testing on the actual devices, resizing the browser, or using developer tools, you can use these tools:</p>
-          <ul>
-            <li><a href="http://pamelafox.github.com/resolutionizer/">Resolutionizer</a>
-            <li><a href="http://screenqueri.es/">ScreenQueries</a>
-            <li><a href="http://labs.adobe.com/technologies/shadow/">Adobe Shadow</a>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_View">Firefox Responsive Design View</a>
-          </ul>
+       <h2>Media Query Attributes</h2>
+       <img src="images/media.png" alt="">
+     </section>
+
+     <section>
+       <h2>More on Media Queries</h2>
+       <p>Check out these two links:</p>
+       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#width">MDN</a>
+       <br>
+       <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/">CSS Tricks</a>
      </section>
 
      <section>
        <h2>CSS Resets</h2>
        <ul>
-        <li>Not the same blank slate - browsers define different default styles.</li>
+        <li>Not all browsers start as the same blank slate - browsers define different default styles.</li>
         <li>CSS reset stylesheets are used to normalize the default CSS across browsers.</li>
      </ul>
-      <p><a href="http://meyerweb.com/eric/tools/css/reset/">Reset.css</a> removes every default style.</p>
     <p><a href="http://necolas.github.com/normalize.css/">Normalize.css</a> normalizes the default styles across browsers (and is the preferred approach).</p>
      </section>
 
      <section>
-       <h2>CSS Grids</h2>
-       <p>A grid system lets you layout pages according to fractions of a grid (usually 12, 16, or 24 columns).</p>
-		  <p>Example: Foundation Grid System</p>
-	  	<p><img src="img/foundation-grid.png" width="100%"></p>
+       <h2>Responsive Design Review</h2>
+       <a href="https://www.sitepoint.com/premium/courses/introduction-to-responsive-web-design-2889/lesson/1/step/1">This video</a>
      </section>
 
      <section>
-       <h2>CSS Grids</h2>
-       <p>A grid system lets you layout pages according to fractions of a grid (usually 12, 16, or 24 columns).</p>
-		  <p>Example: Bootstrap Grid System</p>
-		  <p><img src="img/bootstrap-grid-system.jpg" width="100%"></p>
-     </section>
-
-     <section>
-       <h2>CSS Grids</h2>
-        <p>Example: Foundation grid with mixed classes</p>
-<p>Using <a href="http://foundation.zurb.com/sites/docs/v/5.5.3/components/grid.html">Foundation CSS Grids</a>:</p>
-<pre><code class="html">
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation-essential/6.0.6/css/foundation.css&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;small-2 large-4 columns&quot;&gt; ... &lt;/div&gt;
-        &lt;div class=&quot;small-4 large-4 columns&quot;&gt; ... &lt;/div&gt;
-        &lt;div class=&quot;small-6 large-4 columns&quot;&gt; ... &lt;/div&gt;
-   &lt;/div&gt;
-</code></pre>
-		<p><img src="img/foundation-example.png" width="100%"></p>
-		<p>Also see: <a href="http://960.gs/">960 Grids</a>, <a href="http://1kbgrid.com/">1KB Grid</a></p>
-     </section>
-
-     <section>
-       <h2>CSS Grids</h2>
-       <img src="img/devtools.png" style="width:100%">
+       <h2>How can I make all this stuff easier??</h2>
+       <img src="images/easy.jpeg" alt="">
      </section>
 
      <section>
        <h2>CSS Frameworks</h2>
-      <ul>
-			  <li class="fragment">Why reinvent the wheel?</li>
-			  <li class="fragment">Responsiveness and cross browser consistency for free.</li>
-			  <li class="fragment">Modular and reusable components.</li>
-			  <li class="fragment">Usually include a reset, a grids system, styles for typography and forms. Some include support for mobile/print.</li>
-	  	</ul>
+       <p class="fragment">What is a framework?</p>
+       <p class="fragment">CSS Frameworks are pre-prepared software code that are meant to allow for easier, more standards-compliant web design using the CSS language</p>
+       <p class="fragment">Most languages have frameworks that make your job as the developer easier</p>
      </section>
 
      <section>
        <h2>CSS Frameworks</h2>
-       <p>With <a href="http://v4-alpha.getbootstrap.com/">Twitter Bootstrap</a>:</p>
-<pre><code class="html">
-&lt;link href=&quot;https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-XXXXXXXX&quot; crossorigin=&quot;anonymous&quot;&gt;
-&lt;div class=&quot;container-fluid&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xs-12 col-sm-6 col-md-8&quot;&gt;First Column&lt;/div&gt;
-    &lt;div class=&quot;col-xs-6 col-md-4 &quot;&gt;Second Column&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<img src="img/bootstrap_example_grid.png" style="width: 100%"/>
-
-<p>Also see: <a href="http://purecss.io">Pure CSS</a>, <a href="http://topcoat.io">Topcoat</a>
-</p>
+       <p class="fragment">What does a CSS framework consist of?</p>
+       <p class="fragment">Usually include a reset, a grids system, styles for typography and forms. Some include support for mobile/print.</p>
+       <p class="fragment">Bootstrap! This is a type of CSS framework that includes this grid system and makes other CSS styling techniques easy to use. Developers use this all the time!</p>
      </section>
 
      <section>
-       <h2>Exercise!</h2>
+       <h2>Bootstrap</h2>
+       <a href="http://getbootstrap.com/css/">Check it OUT!</a>
      </section>
+
+     <section>
+       <h2>Bootstrap Grid System</h2>
+      <p>A grid system lets you layout pages according to fractions of a grid (usually 12, 16, or 24 columns).</p>
+      <p>Bootstrap includes a powerful mobile-first grid system for building layouts of all shapes and sizes. It’s based on a 12 column layout.</p>
+     </section>
+
+     <section>
+        <h2>Bootstrap Grid System</h2>
+       <ul>
+         <li class="fragment">There are three major components—containers, rows, and columns.</li>
+         <li class="fragment">Containers—.container for fixed width or .container-fluid for full width—center your site’s contents and help align your grid content.</li>
+         <li class="fragment">Rows are horizontal groups of columns that ensure your columns are lined up properly.</li>
+         <li class="fragment">Content should be placed within columns.</li>
+       </ul>
+     </section>
+
+     <section>
+        <h2>Bootstrap Grid System</h2>
+       <ul>
+         <li class="fragment"> Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So if you want three equal-width columns, you’d use .col-sm-4.</li>
+         <li class="fragment">Column widths are set in percentages, so they’re always fluid and sized relative to their parent element.</li>
+         <li class="fragment">Columns have horizontal padding to create the gutters between individual columns.</li>
+         <li class="fragment">There are five grid tiers, one for each responsive breakpoint: extra small, small, medium, large, and extra large.</li>
+       </ul>
+     </section>
+
+     <section>
+        <h2>Bootstrap Grid System</h2>
+        <img src="images/bootstrap.png" alt="">
+     </section>
+
+     <section>
+       <h2>Creating a Grid With Bootstrap</h2>
+       <img src="images/exercise.png" alt="">
+     </section>
+
+     <section>
+       <h2>Project!</h2>
+       <p>Code the HTML and CSS (and Bootstrap) to make a page that matches this one: http://changecatalyst.co/</p>
+       <p>You should make the page static, the pictures don’t need to move, and you can leave off the footer (everything after the form)</p>
+       <p>You can use JSbin, Codepen, or Visual Studio Code</p>
+     </section>
+
+     <section>
+       <h2>CSS Advanced</h2>
+       <p>For so much more......<a href="http://www.htmldog.com/guides/css/advanced/">Click here</a></p>
+     </section> 
 
     <section style="text-align: left;">
             <h1>THE END</h1>
