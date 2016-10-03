@@ -1627,16 +1627,16 @@ padding: 10px 5px 3px 20px;
 
     <section>
       <h2>Float</h2>
-      <p>The <code>float</code> property is used to float boxes on the sides of other boxes, allowing other content to flow around it. First used to wrap text around images.</p>
+      <p>The <code>float</code> property is used to float boxes on the sides of other boxes, allowing other content to flow around it.</p>
 <pre><code class="html">
 &lt;div style="border:1px solid black"&gt; 
-  &lt;img style="<b>float:right</b>" src="fox.jpg"&gt;
-  Pamela Fox has worked in ....
+  &lt;img style="float:right" src="assk.jpg"&gt;
+   Aung San Suu Kyi is a....
 &lt;/div&gt;
 </code></pre>
 <div style="border:1px solid black">
-<img style="float:right" src="http://www.voicesthatmatter.com/gwt2007/images/speakers/fox125.jpg">
-Pamela Fox has worked in the Developer Programs group at Google for the last 2 years. She dedicates most of her time to supporting the Google Maps API, but spends her free time mashing up other APIs and developer tools. Before that, she graduated from the University of Southern California (USC), where she majored in Computer Science, minored in Linguistics and 3d animation, and helped grow the video games department. 
+<img style="float:right" src="http://prof.chicanas.com/20/wp-content/uploads/2015/04/Aung-San-Suu-Kyi-visit-to-008.jpg">
+<p style="font-size:35px">Aung San Suu Kyi is a Burmese statesperson, politician, diplomat and author who serves as the First and incumbent State Counsellor and Leader of the National League for Democracy. </p>
 </div>
     </section>
     
@@ -1646,7 +1646,7 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
 
 <pre><code class="html">
 &lt;div&gt;
-  &lt;div style="<b>float:left; width:50px;</b> background-color:yellow; "&gt;
+  &lt;div style="float:left; width:50px; background-color:red; "&gt;
     H&lt;br&gt;O&lt;br&gt;M&lt;br&gt;E
   &lt;/div&gt;
   Hi, this is my personal website, where you'll find out everything about my inner desires, hopes, dreams, and incredibly exciting daily life.
@@ -1655,7 +1655,7 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
 </code></pre>
 
 <div>
-  <div style="float:left; width:50px; background-color:yellow; ">
+  <div style="float:left; width:50px; background-color:red; ">
     H<br>O<br>M<br>E
   </div>
   Hi, this is my personal website, where you'll find out everything about my inner desires, hopes, dreams, and incredibly exciting daily life.
@@ -1668,13 +1668,13 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
       <p>The <code>clear</code> property can be used to specify that an element should *not* wrap around floated elements above it.</p>
 
 <pre><code class="html">
-&lt;div style="<b>float:left;</b> width:50px; background-color:yellow; "&gt;
+&lt;div style="float:left; width:50px; background-color:yellow; "&gt;
   H&lt;br&gt;O&lt;br&gt;M&lt;br&gt;E
 &lt;/div&gt;
 &lt;div&gt;
   Hi, this is my personal website, where you'll find out everything about my inner desires, hopes, dreams, and incredibly exciting daily life.
 &lt;/div&gt;
-&lt;div style="<b>clear:both</b>"&gt;Contact me for more info.&lt;/div&gt;
+&lt;div style="clear:both"&gt;Contact me for more info.&lt;/div&gt;
 </code></pre>
 
 <div style="float:left; width:50px; background-color:yellow; ">
@@ -1701,18 +1701,18 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
     
     <section>
       <h2>More on CSS Positioning</h2>
-      <a href="http://learn.shayhowe.com/html-css/positioning-content/">Click here</a>
+      <a href="http://learn.shayhowe.com/html-css/positioning-content/">Click here for Shay Howe's site</a>
     </section>
 
     <section>
       <h2>CSS Layout Review</h2>
       <p>Go through at your own pace</p>
-      <a href="http://learnlayout.com/">Click here</a>
+      <a href="http://learnlayout.com/">Click here for Learn Layout</a>
     </section>
 
     <section>
       <h2>Exercise Time</h2>
-      <a href="https://docs.google.com/a/anniecannons.com/document/d/1DcGTRA_Rnp4H4A5W_M5XX3nChUI9Zd6GaG5d83Qb_a8/edit?usp=sharing">Click here</a>
+      <a href="https://docs.google.com/a/anniecannons.com/document/d/1DcGTRA_Rnp4H4A5W_M5XX3nChUI9Zd6GaG5d83Qb_a8/edit?usp=sharing">Click here for a Google Doc</a>
     </section>
     
     <section>
@@ -1765,7 +1765,7 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
 
      <section>
        <h2>Responsive Design</h2>
-       <p>What is responsive design?</p>
+       <p style="color:yellow">What is responsive design?</p>
        <ul>
          <li class="fragment">Responsive web design is a collection of techniques for building websites that work at multiple screen sizes.</li>
          <li class="fragment">Previously, most web professionals would often create a mobile version of their site and a desktop version, which means they would have to maintain two separate websites, or worse, the site wouldn't work on mobile at all.</li>
@@ -1780,8 +1780,8 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
 
      <section>
        <h2>Media Queries</h2>
-       <p>Media queries are CSS rules that help us include CSS code only when certain conditions are met. These conditions are called media features. And in the case of responsive web design, the media feature most commonly used is width, or more specifically, min or minimum width.<p>
-         <p>In responsive web design, you can think of a breakpoint as a width where the current layout no longer works and the layout breaks. If the layout breaks, then it necessitates a media query that adjusts the layout.</p>
+       <p class="fragment">Media queries are CSS rules that help us include CSS code only when certain conditions are met. These conditions are called <span style="color:yellow">media features</span>. And in the case of responsive web design, the media feature most commonly used is width, or more specifically, min or minimum width.<p>
+         <p class="fragment">In responsive web design, you can think of a <span style="color:yellow">breakpoint</span> as a width where the current layout no longer works and the layout breaks. If the layout breaks, then it necessitates a media query that adjusts the layout.</p>
      </section>
 
     <section>
@@ -1869,7 +1869,7 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
 
      <section>
        <h2>CSS Frameworks</h2>
-       <p class="fragment">What is a framework?</p>
+       <p class="fragment" style="color:yellow">What is a framework?</p>
        <p class="fragment">CSS Frameworks are pre-prepared software code that are meant to allow for easier, more standards-compliant web design using the CSS language</p>
        <p class="fragment">Most languages have frameworks that make your job as the developer easier</p>
      </section>
@@ -1884,6 +1884,8 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
      <section>
        <h2>Bootstrap</h2>
        <a href="http://getbootstrap.com/css/">Check it OUT!</a>
+       <br>
+       <img src="http://vignette2.wikia.nocookie.net/epicrapbattlesofhistory/images/0/0b/Matilda-miss-honey-glasses.gif/revision/latest?cb=20150404013936" alt="">
      </section>
 
      <section>
@@ -1895,7 +1897,7 @@ Pamela Fox has worked in the Developer Programs group at Google for the last 2 y
      <section>
         <h2>Bootstrap Grid System</h2>
        <ul>
-         <li class="fragment">There are three major components—containers, rows, and columns.</li>
+         <li class="fragment">There are three major components—<span style="color:yellow">containers, rows, and columns</span>.</li>
          <li class="fragment">Containers—.container for fixed width or .container-fluid for full width—center your site’s contents and help align your grid content.</li>
          <li class="fragment">Rows are horizontal groups of columns that ensure your columns are lined up properly.</li>
          <li class="fragment">Content should be placed within columns.</li>
