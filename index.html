@@ -748,12 +748,12 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
      <p>CSS = Cascading Style Sheets</p>
      <p>CSS is a "style sheet language" that lets you style the elements on your page. It adds color, boldness, and layout to an otherwise plain and boring world of HTML.  </p>
      <p>CSS is embedded inside HTML, but it is not HTML itself.</p>
-     <a href="http://www.csszengarden.com">Check this out</a>
+     <a href="http://www.csszengarden.com">CSS Zen Garden</a>
   </section>
 
   <section>
     <h2>CSS</h2>
-    <p>CSS is designed primarily to enable the *separation of document content from document presentation</p>
+    <p>CSS is designed primarily to enable the *separation* of document content from document presentation</p>
     <ul>
       <li class="fragment">This means that the code you write that defines the content on the page will be different than the code you write to define the look of that code as it is rendered in the browser. </li>
       <li class="fragment">Having CSS written separately from the HTML can provide more flexibility and control in defining the look of content. It can also enable multiple pages or elements to share the same formatting rules. </li>
@@ -1359,7 +1359,7 @@ body {
      
      <section>
        <h2>Overview: CSS Layout</h2>
-       <p>All web layouts are accomplished with block elements. Designers use blocks, most often <div> elements, to create rectangular areas into which all content fits. Here is an overview:</p>
+       <p>All web layouts are accomplished with block elements. Designers use blocks, most often <code>div</code> elements, to create rectangular areas into which all content fits. Here is an overview:</p>
        <ul>
          <li>Display</li>
          <ul>
@@ -1543,6 +1543,7 @@ padding: 10px 5px 3px 20px;
 
     <section>
       <h2>Exercise Time</h2>
+      <p><a href="https://www.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/p/challenge-the-boxer-model">Khan Academy Exercise</a></p>
     </section>
 
     <section>
@@ -1569,8 +1570,8 @@ padding: 10px 5px 3px 20px;
 &lt;div style="border:1px solid black"&gt; Hey, dude&gt;!&lt;/div&gt;
 </code></pre>
 <h1 style="border:1px solid black">Greetings</h1>
-<p style="border:1px solid red">Hola, novato</p>
-<div style="border:1px solid black"> Hey, dude</div>
+<p style="border:1px solid red">Hola, novato </p>
+<div style="border:1px solid black"> Hey, dude! </div>
     </section>
     
     <section>
@@ -1595,13 +1596,13 @@ padding: 10px 5px 3px 20px;
 &lt;/div&gt;
 </code></pre>
 <pre><code class="html">
-&lt;div style="position: absolute; bottom: 10px; left:60px;
+&lt;div style="position: absolute; bottom: 5px; left:60px;
   background-color: green"&gt;
  Down here
 &lt;/div&gt;
 </code></pre>
 <div style="position: absolute; top: 10px; right: 10px; background-color: yellow">Up here</div>
-<div style="position: absolute; bottom: 10px; left:60px; 
+<div style="position: absolute; bottom: 5px; left:60px; 
   background-color: green">
  Down here
 </div>
@@ -1618,9 +1619,9 @@ padding: 10px 5px 3px 20px;
   background-color: green; z-index: 2;"&gt; Top &lt;/div&gt;
 </code></pre>
 
-<div style="position: absolute; bottom: 20px; left:60px; 
+<div style="position: absolute; bottom: 10px; left:60px; 
   background-color: red"> Bottom </div>
-<div style="position: absolute; bottom: 30px; left:60px; 
+<div style="position: absolute; bottom: 20px; left:60px; 
   background-color: green; z-index: 2;"> Top </div>
     </section>
 
