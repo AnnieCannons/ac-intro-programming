@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<!-- This is how you write comments in a HTML document. Anything between these special brackets will not print to the screen. Notice on line 1 there is a special tag that tells the browser that you are writing a HTML document. This tag starts with an exclamation point, and doesn't have a matching closing tag anywhere. That makes it unlike other tags that you will encounter in HTML. -->
+
+<html>
+
+  <!-- The opening HTML tag is the next thing to show up in your document. The paired closing tag is put at the very end of the document. Paired closing tags have a forward slash after the first bracket. See the closing 'head' tag below for an example. -->
+
+  <head>
+    <!-- You can use the link tag to add styles. Your styles are defined under "css" folder and the file name is "style.css". Here we are referencing the file by giving href attribute the value "style.css". Which means go to find the "style.css" file. If we had the files somewhere else in our folder structure we would use the same formula to create the href value.  -->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Inside the head, you will put a number of tags, which will be explained in more detail in future lessons. One of the tags that you will put inside your <head> tag is the <title> tag. The <title> will show up in the tab on the top of the page when you view the document in your web browser. -->
+
+    <title>Intro to basic HTML tags</title>
+    
+
+  </head>
+
+  <body>
+
+    <!-- The body tag is where you put tags and text that will be visible on the page -->
+
+    This text is not enclosed within brackets, and will be visible on the page.
+
+    <!-- Here is a chance to see and try out various tags that will change the way the text is rendered on the page. -->
+
+    <h1>This text is in a H1 tag, which stands for "heading - size 1"</h1>
+    <h2>This text is in a H2 tag, which is "heading - size 2"</h2>
+
+    <!-- Add in an opening and closing <h3> tag, and write something between the tags -->
+
+    <h4>Heading size 4 is smaller than 3, but larger than size 5.</h4>
+
+    <!-- Add in some text with opening and closing <h5> tags  -->
+
+    <h6>Heading size 6 is rather small</h6>
+
+    <!-- h6 is the last and smallest heading tag -->
+
+    Guess what happens when you wrap text in an &lt;i&gt; tag? It becomes <i>italicized</i>. And one important thing to note is that if you don't use a</i>
+    break tag, then the text continues to flow along on the same line. Even if you are writing
+    on a new
+    <p>line in your text </p>
+    editor.
+
+    <!-- The '&lt;' and '&gt;' around the letter i in the above text are a way to make angled brackets to show up on a web page without your browser turning those brackets into a piece of HTML. 'lt' stands for 'less than' for '<' and 'gt' stand for 'greater than' for '>' -->
+
+    <!-- Notice how all the text on the different lines above shows up on only one line when it is rendered in the browser -->
+
+    <!-- A <br> or 'break tag' will make a line break between these two text segments. Some tags will automatically make a line break, others will not. -->
+
+    <br>
+    <br>
+
+    <i>this italicized text was preceeded with two break tags, and there is a </i>
+    <br>
+    <b>break tag between the italicized text and this bold text</b>
+    <br>
+    <br>
+    You can<br>also put<br>break tags<br>anywhere that you want<br>to see a new<br>line.
+
+    <br>
+    <br>
+
+    The &lt;u&gt;, which stands for 'underline' will <u>do just that</u>!
+
+    <br>
+    <br>
+
+
+    <!-- Image tags do not have a closing tag. They tell the browser where to find the image to display. Notice the break tags between the text and the image -->
+
+    This is the image contained online, and can be found at http://lonestarmediasa.com/wp-content/uploads/2014/11/smiley-face-clip-art15.jpg:
+
+    <!-- If you look in the images folder, you will see a file for the sun image. But, in order to link it to a page, you need to use an HTML image tag, like you see below -->
+
+    <br>
+    <br>
+    <img src="http://lonestarmediasa.com/wp-content/uploads/2014/11/smiley-face-clip-art15.jpg" alt="Smiley face">
+
+
+    <img src="" alt="">
+
+    <!-- Please add another image from online to your page -->
+
+    <!-- The 'src' in the img element stands for 'source' and represents the location of the image that is being displayed. Properties such as 'src' are known as 'attributes' that are written inside the brackets of an HTML element. Attributes give the browser more information about each HTML element. -->
+
+    <br>
+    <br>
+
+    <!-- If you want to travel to another web page, and anchor tag is required. The text inside the element below is a link to another HTML document representing another web page. -->
+
+    <a href="http://www.google.com">Click here to go to another page!</a>
+
+
+    <!-- By default, the text inside of an 'a' element will be underlined and displayed in a different color to let you know that it is a link. It is usually blue if you have never clicked on that link, and purple if you have previously been to that webpage. The 'href' attribute stands for 'hypertext reference', and just like 'src' in an image tag, it represents the location of a different file or web page. -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- There is a another HTML doc that needs a link below. Without a different value for 'href', clicking on an anchor link will take you to the top of the current page. Follow the format of the anchor tag above to add a link to any website you want it to go to -->
+
+    <a href="http://www.google.com">Click here to go to the link test page.</a>
+
+    <br>
+    <br>
+
+    <!-- Lists are another way of displaying information. Typically lists appear as either ordered lists (marked 'ol') or unordered lists ('ul'). Each list item is marked with 'li' tags. -->
+
+    <!-- Ordered lists are numbered -->
+
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+
+
+    <!-- By default, unordered lists are marked with bullet points, but this style can be changed via CSS -->
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+
+    <br>
+    <br>
+
+    <!-- The 'p' in p tags stands for 'paragraph', so these tags typically go around large bodies of text. When building websites, it is common to use fake text to simulate the presence of written material. This filler writing is called 'Lorum ipsum', which are the first words of a common piece of jumbled text written in Latin. The important part is not the writing itself, but how the appears when you are designing and developing the web page.-->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec ante eget mi consectetur ultricies imperdiet eu magna. Fusce fermentum, nibh eu gravida viverra, augue purus consectetur nulla, viverra tincidunt justo eros eget dolor. Nulla non ullamcorper quam, ac aliquet lacus. Etiam id odio dignissim, tempor nisi a, semper magna. Praesent at ipsum porta, pellentesque lacus posuere, sollicitudin arcu. Fusce felis turpis, luctus sed interdum vitae, volutpat eleifend leo. Cras lobortis neque sit amet quam semper iaculis. Donec aliquam vestibulum commodo. Vivamus tincidunt sem quis est tincidunt, id commodo mi vestibulum. Donec interdum ac erat vitae ullamcorper. Suspendisse vitae gravida lectus. Quisque porttitor interdum turpis in porttitor. Nulla sed ornare nisl. Quisque ac arcu leo. In hac habitasse platea dictumst. Praesent eget erat pretium, dapibus tortor in, pulvinar massa.</p>
+
+    <!-- If you change the size of the browser window, you will notice that the Lorem ipsum text above will reshape itself to fit inside the window. This means that the p tags containing the Lorem ipsum have inherent block styling, which means it takes up the full width available to it. This will be covered in more detail in the CSS section. -->
+
+    <br>
+    <br>
+
+    <!-- We can also create forms inside of HTML.  Forms are used to take user information so that we can proccess or use it in some way.  Forms are blocked off by the <form> </form> tags, and within them we place inputs.  An input will take some kind of information, which is set after 'type'.  In our example we can see that we take in the following types: "text", "radio", "checkbox", "number", and "submit".  These input types are typically best in particular situations.  Each input has a comment describing their use in more detail.
+
+    These inputs are processed by the computer in some way, however we do not have any code that works with the inputs, nor are we working with that right now.  For now we're just concerned with getting them onto the page.
+    -->
+
+    <form id="form">
+      Name:
+      <input type="text" name="username" placeholder="Enter your name here">
+      <!-- Text inputs are good for any input the user would type in, such as a name, comment, etc... 
+           The placeholder option allows you to define the greyed-out text -->
+      <br>
+      Handedness:
+      <input type="radio" name="handedness" value="right" checked="checked"> Right Handed
+      <input type="radio" name="handedness" value="left"> Left Handed
+      <input type="radio" name="handedness" value="ambidextrous"> Ambidextrous
+      <!-- Radio inputs are good if the user is only allowed to choose one of the options.  For example, it is only physically possible for a user to be one of the above options. -->
+      <br>
+      Animals you like:
+      <input type="checkbox" name="animal" value="cat"> Cat
+      <input type="checkbox" name="animal" value="dog"> Dog
+      <input type="checkbox" name="animal" value="parrot"> Parrot
+      <input type="checkbox" name="animal" value="lion"> Lion
+      <!-- Checkboxes are good if a user can choose none, one, or many of the options.  In this example the user may like cats and dogs.  If we were to use a radio-selector the user could only choose one option. -->
+      <br>
+      Age:
+      <input type="number" name="age" min="0" max="120">
+      <!-- Number is like a text box, however it only accepts numbers as input, and adds the + / - buttons to the side. -->
+      <br>
+      <input type="submit" value="Submit">
+      <!-- Submit is a special kind of type="button" which takes the data that the user has entered into the form and refreshes the page.  Above I'm sure you noticed the 'name' and 'value' options.  When we hit submit the computer will pass the data along, and those will be used as identifiers.  However there is no function attached to the submit button to process the data, so instead it just refreshes the page.  -->
+      
+      <!--  This is a plain button.  If you remove it from the comment you will see that 'value' corresponds to its name.  And this button does not refresh the page when it is clicked.
+      <input type="button" value="Other 'Submit' ">
+      -->
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- This is a table, it is composed of rows (horizontal elements) and columns (vertical elements).  Each row is a set of information about an individual topic, while the column is all one kind of information.  (i.e., each row is information about one entity.  Luke Skywalker is 25 years old.  While everything down the column 'age' will be ages of various people.) -->
+
+    <!-- 
+    A table is composed of 4 different kinds of tags:  
+        The <table></table> tag, which encloses the entire table.
+        The <tr> tag, which stands for Table Row, which encloses one row of the table.
+        The <th> tag, which stands for Table Header, which sets the data types in bold on the top.
+        The <td> tag, which stands for Table Data, which defines what populates each column of a row.
+    -->
+
+    <table>
+      <tr>
+        <th> First Name </th>
+        <th> Last Name </th>
+        <th> Order of Presidency </th>
+        <th> Age when elected </th>
+      </tr>
+      <tr>
+        <td> Barack </td>
+        <td> Obama </td>
+        <td> 44 </td>
+        <td> 47 </td>
+      </tr>
+      <tr>
+        <td> Abraham </td>
+        <td> Lincoln </td>
+        <td> 16 </td>
+        <td> 51 </td>
+      </tr>
+    </table>
+
+    <!-- Now that you've seen a table, try and add additional data to the table.  Perhaps, another President.  --> 
+
+
+
+    <!-- The last HTML elements we will cover are divs and spans as well as the id and class properties. These will become more important in the CSS section. The span tag has inherent inline styling, meaning it only takes up the space it needs, while the div tag has a block styling (just like the p tags discussed above).
+
+    The id ('ID' is written lowercase in HTML) and class attributes are used in CSS to identify which HTML elements will receive which styling. Typically, an id will only be on one specific element, while a class can be applied to multiple elements. Below is a span with a class of 'text' and a div with an id of 'first'. However, you will notice that without content in the middle of the tags, these will not show up on the website. In the CSS section, you will be able to apply styling to spans and divs that will cause them to appear even without content. -->
+
+    <p>This is the <span id="best">best</span> day!</p>
+
+    <span class="text"></span>
+    
+    <div id="first"></div>
+
+  </body>
+</html>
