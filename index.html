@@ -605,8 +605,8 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
 
 &lt;!--
 &lt;ol&gt;
-&lt;li&gt;List Item&lt;/li&gt;
-&lt;li&gt;Another List Item&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;List Item&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;Another List Item&lt;/li&gt;
 &lt;/ol>
 -->
 </code></pre>
@@ -619,15 +619,16 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
       <p>Tables are made up of rows and columns.</p>
       <div>
         <div class="halfblock">
-<pre><code class="html">&lt;table&gt;
-&lt;tr&gt;
-&lt;th&gt;Head&lt;/th&gt;
-&lt;th&gt;Head&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Data&lt;/td&gt;
-&lt;td&gt;Data&lt;/td&gt;
-&lt;/tr&gt;
+<pre><code class="html">
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Head&lt;/th&gt;
+    &lt;th&gt;Head&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data&lt;/td&gt;
+    &lt;td&gt;Data&lt;/td&gt;
+  &lt;/tr&gt;
 &lt;/table&gt;
 </code></pre>
         </div>
@@ -721,7 +722,7 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
     <section>
       <h3>Semantic Markup</h3>
       <p>There are some text elements that are not intended to affect the structure of your web pages, but they do add extra information to the pages — they are known as semantic markup.</p>
-      <aside class="notes"></aside>
+      <aside class="notes">Speak about the difference between semantic and style tags.</aside>
     </section>
 
     <section>
@@ -762,7 +763,9 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
 &lt;p class="anniecannons"&gt;We are going to start CSS soon!&lt;/p&gt;
 &lt;p id="coach"&gt;Where's my treat?&lt;/p&gt;
 </code></pre>
-    </section>
+  <aside class="notes">Estamos aprendiendo habilidades incre&iacute;bles para codificar. Vamos a comenzar CSS pronto. D&oacute;nde est&aacute; mi premio?<br />
+  Taked a lot about div and id tags as containers which lead to a conversation about the separation of content and presentation. Then used jsbin.com to introduce CSS. Get started with HTML module of Codecademy and enroll them in Pluralsight.</aside>
+  </section>
 
     <section>
       <h2>Some inspiration</h2>
@@ -784,6 +787,7 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
      <p>CSS is a "style sheet language" that lets you style the elements on your page. It adds color, boldness, and layout to an otherwise plain and boring world of HTML.  </p>
      <p>CSS is embedded inside HTML, but it is not HTML itself.</p>
      <a href="http://www.csszengarden.com">CSS Zen Garden</a>
+     <aside class="notes">Go to website and render HTML alone and then with several different CSS files.</aside>
   </section>
 
   <section>
@@ -834,6 +838,7 @@ selector {
 }
 </code></pre>
     <p>The selector is used to select which elements in the HTML page will be given the styles inside the curly braces. </p>
+    <aside class="notes">Display simple example in jsbin.com</aside>
   </section>   
 
   <section>
@@ -844,6 +849,7 @@ selector {
       <li>class </li>
       <li>position in document </li>
     </ol>
+    <aside class="notes">On the board write CSS rules and their hierarchy 1.tag 2.id 3.class and then demostrate the hierarchy using jsbin.com.</aside>
   </section>
  
   <section>
@@ -905,9 +911,9 @@ Selects any element with the id “header", e.g.
 </code></pre>
 
 <pre><code class="html">
-&lt;p class="desc intro"&gt;hi&lt;/span&gt; -&gt; hi
-&lt;p class="desc"&gt;hi&lt;/span&gt; -&gt; hi
-&lt;p class="intro"&gt;hi&lt;/span&gt; -&gt; hi
+&lt;p class="desc intro"&gt;hi&lt;/p&gt; -&gt; hi
+&lt;p class="desc"&gt;hi&lt;/p&gt; -&gt; hi
+&lt;p class="intro"&gt;hi&lt;/p&gt; -&gt; hi
 </code></pre>
     </section>
    
@@ -925,10 +931,10 @@ The " " (space) is how you say "find a descendant."
  </p>
 <pre><code class="html">
 &lt;body&gt;
- &lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Hi&lt;/em&gt;&lt;/li&gt;
- &lt;/ul&gt;
- &lt;p&gt;&lt;em&gt;Bye&lt;/em&gt;&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;em&gt;Hi&lt;/em&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;&lt;em&gt;Bye&lt;/em&gt;&lt;/p&gt;
 &lt;/body&gt;
 </code></pre>
    </section>
@@ -966,8 +972,8 @@ contains the word "special".
 </p>
 <pre><code class="html">
 &lt;ul&gt;
-  &lt;li&gt;Rice Krispies&lt;li&gt;
-  &lt;li class="special"&gt;NutriGrain&lt;li&gt;
+  &lt;li&gt;Rice Krispies&lt;/li&gt;
+  &lt;li class="special"&gt;NutriGrain&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
   <p>Warning: If you place a space after the ".", it'll look for descendants of <code>li</code> with class of "special."</p>
@@ -983,6 +989,7 @@ contains the word "special".
 <p>
 Selects any <code>em</code> element with a class attribute that contains the word "required" that is a descendant of a <code>p</code> element that is a descendant of a <code>form</code> element that is a descendant of a <code>div</code> element with a class attribute that contains the word "content" that is a descendant of any element with an id attribute that equals "header".
 </p>
+
     </section>
     
     <section>
@@ -1011,7 +1018,7 @@ a:focus {  /* focused link */
       <h2>Grouping selectors</h2>
       <p>You can group selectors to apply the same style to all of the selectors  by separating them with commas:</p>
 <pre><code class="css">
-a:hover, a:active:, a:focus {
+a:hover, a:active, a:focus {
   background-color: yellow;
 }
 </code></pre>
@@ -1097,6 +1104,10 @@ color: #333;
 background-color: red;
 font-family: Arial, sans-serif;
 </code></pre>
+<aside class="notes"> Demonstrate using jsbin.com. Explain the difference between font property 
+  and the more detailed font properties.
+  Also, mention the difference between a specific font like "Arial" and a category like sans-serif
+</aside>
     </section>
    
     <section>
@@ -1133,6 +1144,7 @@ table {
   background-color: #FFCC00;
 }
 </code></pre>
+<aside class="notes">Important to show the hierarch of elements, classes and ids using jsbin.com</aside>
     </section>
     
     <section>
@@ -1158,6 +1170,7 @@ font-family: "Times New Roman", serif;
 font-family: "Arial", sans-serif;
 font-family: Courier, monospace;
 </code></pre>
+<aside class="notes">Look at description about difference of font categories on page 274-5 titled Tyepface Tecnology</aside>
     </section>
     
     <section>
@@ -1170,6 +1183,9 @@ font-family: Courier, monospace;
         <li><a href="http://www.goodwebfonts.com/">Good Web Fonts</a>
         <li><a href="http://www.typotheque.com/fonts/">Typotheque</a>
       </ul>
+      <aside class="notes">http://caniuse.com shows what properties are supported in your browser. You can also google 'what css properties does my browser support?'
+        Also, show the CSS MDN website to show what properties exist in CSS.
+      </aside>
     </section>
     
     <section>
@@ -2017,6 +2033,7 @@ padding: 10px 5px 3px 20px;
     });
 
 </script>
+
 
 </body>
 </html>
