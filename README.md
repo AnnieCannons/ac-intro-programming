@@ -1,4 +1,4 @@
-# AnnieCannons Introduction to Programming, HTML, and CSS
+# AnnieCannons Introduction to Programming Languages and HTML
 
 This module introduces programming languages and the differences between front-end and back-end development. It also introduces HTML and CSS, the markup for your websites. It covers:
 
