@@ -21,6 +21,8 @@
     <link rel="icon" href="images/AC_Asterisk.png">
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/classcolors.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
 
     <!-- Printing and PDF exports -->
     <script>
@@ -54,14 +56,14 @@
 
       <section>
           <h2>Computer Science: Key Concepts</h2>
-          <p>Computer programmers use programming languages to give instructions (code) for a computer to do.</p>
+          <p>Computer programmers use programming languages to give instructions (<span class="yellow">code</span>) for a computer to do.</p>
       </section>
 
       <section> 
           <h2>Programming Languages</h2>
           <p class="fragment">Programming languages have commands and constraints to tell the computer what to do. One command cannot do every little thing.</p> 
           <p class="fragment" style="color:#77A58F">Programmers must understand the set of commands a programming language allows her to do.</p>
-          <p class="fragment">Then she must use her creativity and problem-solving skills to get the computer to do what she wants.</p>
+          <p class="fragment">The programmer must use their creativity and problem-solving skills to get the computer to do what they want.</p>
       </section>
 
       <section>
@@ -71,360 +73,394 @@
 
       <section> 
         <h2>Languages We Will Learn in Phase 2</h2>
-        <p class="fragment">Structure and semantics of web content (aka markup) - HTML (markup language)</p> 
-        <p class="fragment" style="color:#77A58F">Styling of fonts, headers, colors, images, links, etc. - CSS (style sheet language)</p>
-        <p class="fragment">Functionality of a webpage, such as scrolling and login - JS (scripting language)</p>
+        <p class="fragment">Structure and semantics of web content (aka <span class="yellow">markup</span>) -<br><span class="orange">HTML</span>  (<span class="yellow">markup language</span>)</p> 
+        <p class="fragment">Styling of fonts, headers, colors, images, links, etc. -<br><span class="orange">CSS</span> (<span class="yellow">style sheet language</span>)</p>
+        <p class="fragment">Functionality of a webpage, such as scrolling and login -<br><span class="orange">JS</span> (<span class="yellow">scripting language</span>)</p>
         <a class="fragment" href="https://www.youtube.com/watch?v=gT0Lh1eYk78" target="_blank">Let's find out about these Tres Amigos!</a>
     </section>
       
-      <section>
-        <h3>Important Terms (review!)</h3>
+    <section>
+      <h3>Important Terms (review!)</h3>
+      <ul>
+        <li class="fragment"><span style="color:yellow">Web design</span><br />
+        The process of planning, structuring and creating a website</li>
+        <li class="fragment"><span style="color:yellow">Web development</span><br />
+        The process of programming dynamic web applications</li>
+      </ul>
+    </section>
+
+    <section>
+        <h2>Different Roles in Tech Companies</h2>
+        <img src="images/web-team.png" alt="List of positions in tech company">
+    </section> 
+
+    <section>
+        <h2>Front-End and Back-End</h2>
+        <p>In software engineering, the terms <span style="color:yellow">"front-end"</span> and <span style="color:orange">"back-end"</span> are distinctions which refer to the separation of concerns between a <span style="color:yellow">presentation layer</span> and a <span style="color:orange">data access layer</span> respectively.</p>
+        <img data-enlargable width="600" style="border: 5px solid blue; cursor: zoom-in" src="images/frontend.png" alt="Diagram of front-end architecture">
+    </section>
+
+    <section>
+        <h2>Front-End Development</h2>
         <ul>
-          <li class="fragment"><span style="color:yellow">Web design</span><br />
-          The process of planning, structuring and creating a website</li>
-          <li class="fragment"><span style="color:yellow">Web development</span><br />
-          The process of programming dynamic web applications</li>
+            <li class="fragment"><span style="color:yellow">Front-end development</span> refers to how the user interfaces with the data and information stored by the website/application/program.</li>
+            <li class="fragment">Most of everything you see on any website is a mixture of <span style="color:yellow">HTML, CSS, and JavaScript</span>, which are all controlled by the browser.</li>
         </ul>
-      </section>
+    </section> 
+      
+    <section>
+        <h2> What's on my screen? </h2>
+        <p class="fragment">For example, if you’re using Google Chrome or Firefox, the browser is what translates all of the code in a manner for you to see and with which to interact, such as fonts, colors, drop-down menus, sliders, forms, etc.</p>
+        <p class="fragment"><span style="color:yellow">Front-end development</span> refers to how the user interfaces with the data and information stored by the website/application/program.</p>
+        <p class="fragment">Our Phase 2 curriculum equips you with front-end development skills.</p>
+    </section> 
 
-      <section>
-          <h2>Different Roles in Tech Companies</h2>
-          <img src="images/web-team.png" alt="List of positions in tech company">
-      </section> 
+    <section>
+        <h2>How do these all fit together?</h2>
+        <img src="images/frontend2.png" alt="Components of a Website">
+        <p class="fragment">Let's use <a target="_blank" href="https://google.com">Developer Tools</a>.</p>
+        <aside class="notes">A great example to use is to go to ACFJC website and delete the CSS link in the head in Developer Tools to get rid of CSS styles.</aside>
+    </section>
 
-      <section>
-          <h2>Front-End and Back-End</h2>
-          <p>In software engineering, the terms <span style="color:yellow">"front-end"</span> and <span style="color:orange">"back-end"</span> are distinctions which refer to the separation of concerns between a <span style="color:yellow">presentation layer</span> and a <span style="color:orange">data access layer</span> respectively.</p>
-          <img src="images/frontend.png" alt="Diagram of front-end architecture">
-      </section>
-
-      <section>
-          <h2>Front-End Development</h2>
-          <ul>
-              <li class="fragment"><span style="color:yellow">Front-end development</span> refers to how the user interfaces with the data and information stored by the website/application/program.</li>
-              <li class="fragment">Most of everything you see on any website is a mixture of <span style="color:yellow">HTML, CSS, and JavaScript</span>, which are all controlled by the browser.</li>
-          </ul>
-      </section> 
-        
-      <section>
-          <h2> What's on my screen? </h2>
-          <p class="fragment">For example, if you’re using Google Chrome or Firefox, the browser is what translates all of the code in a manner for you to see and with which to interact, such as fonts, colors, drop-down menus, sliders, forms, etc.</p>
-          <p class="fragment"><span style="color:yellow">Front-end development</span> refers to how the user interfaces with the data and information stored by the website/application/program.</p>
-          <p class="fragment">Our Phase 2 curriculum equips you with front-end development skills.</p>
-      </section> 
-
-      <section>
-          <h2>How do these all fit together?</h2>
-          <img src="images/frontend2.png" alt="Components of a Website">
-          <p class="fragment">Let's use <a target="_blank" href="https://google.com">Developer Tools</a>.</p>
-          <aside class="notes">A great example to use is to go to ACFJC website and delete the CSS link in the head in Developer Tools to get rid of CSS styles.</aside>
-      </section>
-
-      <section>
-        <h2>Front-End Languages</h2>
+    <section>
+      <h2>Front-End Languages</h2>
+      <ul>
+        <li class="fragment"><span style="color:yellow">HTML aka Hypertext Markup Language</span>: Describes layout of elements on a website and provides browsers with a list of needed files, e.g., CSS and JavaScript.</li>
         <ul>
-          <li class="fragment"><span style="color:yellow">HTML aka Hypertext Markup Language</span>: Describes layout of elements on a website and provides browsers with a list of needed files, e.g., CSS and JavaScript.</li>
-          <ul>
-            <li class="fragment">Think: The blueprint of a house.</li>
-          </ul>
-          <li class="fragment"><span style="color:yellow">CSS aka Cascading Style Sheets</span>: is responsible for the way websites look. Colors, fonts, and even some animations are all controlled by CSS.</li>
-          <ul>
-            <li class="fragment">Think: an interior designer's instructions for making a website look great.</li>
-          </ul>
-          <li class="fragment"><span style="color:yellow">JavaScript</span>: controls interactions on a website.</li>
-          <ul>
-            <li class="fragment">Think: a handyman that can tear down walls, build new rooms, redecorate your house, make a house "smart".</li>
-          </ul>
+          <li class="fragment">Think: The blueprint of a house.</li>
         </ul>
-      </section>
+        <li class="fragment"><span style="color:yellow">CSS aka Cascading Style Sheets</span>: is responsible for the way websites look. Colors, fonts, and even some animations are all controlled by CSS.</li>
+        <ul>
+          <li class="fragment">Think: an interior designer's instructions for making a website look great.</li>
+        </ul>
+        <li class="fragment"><span style="color:yellow">JavaScript</span>: controls interactions on a website.</li>
+        <ul>
+          <li class="fragment">Think: a handyman that can tear down walls, build new rooms, redecorate your house, make a house "smart".</li>
+        </ul>
+      </ul>
+    </section>
 
-      <section>
-        <h2>Now that we have a front-end "house"...</h2>
-        <p class="fragment">How do we change the address (domain) to the house?</p>
-        <p class="fragment">How do we move this house or ship it to another location (hosting service)?</p>
-        <p class="fragment">Enter databases to the rescue! Databases store, organize, and retrieve a website or application’s data. Databases make up the <span style="color:yellow">backend</span>.</p>
-        <p class="fragment">Did you know? Data is now the <a target="_blank" href="https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data">most valuable commodity</a> on the planet, even more valuable than oil.</p>
-      </section> 
+    <section>
+      <h2>Now that we have a front-end "house"...</h2>
+      <!-- <p class="fragment">How do we change the address (domain) to the house?</p>
+      <p class="fragment">How do we move this house or ship it to another location (hosting service)?</p> -->
+      <p class="fragment">How does the browser access the house?<br><span class="fragment orange">GET request to the server</span></p>
+      <p class="fragment">Where do we put the house on the web for others to access?<br><span class="fragment orange">Hosting service</span></p>
+      <p class="fragment">How do we store info the user has submitted to the house?<br><span class="fragment orange">Database</span></p>
+    </section>
 
-      <section>
-          <h2>Back-End Languages</h2>
-          <p class="fragment">The <span style="color:yellow">back-end</span> enables the browser to show the front-end "house."</p>
-          <p class="fragment">The back-end holds the information and helps with all of the technical pieces that help make a website function. Types of back-end languages:</p>
+    <section>
+      <h2>More on Databases</h2>
+      <p>Enter databases to the rescue!</p>
+      <p>Databases store, organize, and retrieve a website or application’s data.</p>
+      <p>Databases make up the <span style="color:yellow">backend</span>.</p>
+      <hr>
+      <p class="fragment"><span class="orange">Did you know?</span><br>Data is now the <a target="_blank" href="https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data">most valuable commodity</a> on the planet, even more valuable than oil.</p>
+    </section> 
+
+    <section>
+        <h2>Back-End Languages</h2>
+        <p class="fragment">The <span style="color:yellow">back-end</span> enables the browser to show<br>the front-end "house."</p>
+        <p class="fragment">The back-end holds the information and helps with all of the technical pieces that help make a website function.</p>
+        <div class="fragment">
+          <p>Types of back-end languages:</p>
           <ul>
             <li class="fragment">Python</li>
             <li class="fragment">Ruby</li>
             <li class="fragment">PHP</li>
             <li class="fragment">Java</li>
           </ul>
-        </section> 
-        
-      <section>
-          <h2>Back-End Web Development</h2>
-          <p>The back-end has three parts to it:</p>
+        </div>
+      </section> 
+      
+    <section>
+        <h2>Back-End Web Development</h2>
+        <p>The back-end has three parts to it:</p>
+        <ul>
+          <li class="fragment">server</li>
+          <li class="fragment">application</li>
+          <li class="fragment">database</li>
+        </ul>
+        <p class="fragment">A <span class="yellow">server</span> is a computer that fulfills client requests.</p>
+        <p class="fragment">An <span class="yellow">application</span> creates, deletes, changes, renames, etc., information.</p>
+        <p class="fragment">A <span class="yellow">database</span> stores such information.</p>
+    </section>
+
+    <section>
+      <h2>Back-End Web Development Analogy</h2>
+      <img style="float: left;" src="images/kitchen.jpg" alt="kitchen clipart">
+      <div class="widescreen-monitor" style="float: right;">
+      <p>If the <span class="orange">kitchen</span> is the <span class="yellow">server</span> and the <span class="orange">fridge</span> is the <span class="yellow">database</span>, then the <span class="orange">_____</span> is the <span class="yellow">web application</span>.</p>
+      <p class="fragment">The <span class="orange">Chef</span> is the <span class="yellow">web application</span>, because they do all of the tasks and create the food with the algorithms that they are programmed to make (aka business logic) with the food (aka data).</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Back-End Web Development Example</h2>
+      <p>Everything that a customer sees on the webpage is the <span style="color:yellow">front-end</span>.</p>
+      <p class="fragment">Once that customer enters all of her information, such as name, billing address, destination, etc.,</p>
+      <p class="fragment">the web <span class="orange">application</span> stores the information in a <span class="orange">database</span> <span class="fragment">that was created previously on the <span class="orange">server</span> in which the website is calling for information.</span></p>
+      <p class="fragment"><span class="orange">That</span> is all <span style="color:yellow">back-end</span>.</p>
+    </section>
+
+  <section>
+      <h2>Back-End Web Development</h2>
+      <p>The <span style="color:yellow">web application</span> creates, deletes, changes, renames, etc., items in the <span style="color:yellow">database</span>.</p>
+      <p>A <span style="color:yellow">server</span>, in the simplest form, is a computer accessed remotely that runs software to fulfill requests from clients.</p>
+  </section>
+
+  <section>
+      <h2>What's so special about JavaScript?</h2>
+      <p class="fragment">It is the only language on both<br>the front-end and the back-end!</p>
+      <p class="fragment">Lots of great libraries and frameworks!</p>
+      <ul>
+        <li class="fragment"><span class="orange">Front-end</span>: Angular, Backbone, React, Ember</li>
+        <li class="fragment"><span class="orange">Server</span>: Express, Node.js</li>
+        <li class="fragment"><span class="orange">Database</span>: MongoDB</li>
+      </ul>
+      <img src="images/js.jpg" style="width:350px;height:200px;" alt="JavaScript Logo" class="fragment">
+  </section>
+
+  <!-- <section>
+    <h2>Companies and Different Backend Languages</h2>
+    <img data-enlargable width="800" style="border: 5px solid blue; cursor: zoom-in" src="images/backend.png" alt="Lists of Backend Languages and Companies">
+    <aside class="notes"><a target="_blank" href="https://www.guru99.com/mean-stack-developer.html">MEAN stack</a>
+      <a target="_blank" href="https://www.ibm.com/cloud/learn/lamp-stack-explained">LAMP stack</a>
+    </aside>
+  </section> -->
+
+  <section>
+    <h2>Review</h2>
+    <p>What is the difference between front-end and back-end?</p>
+    <img src="images/doggif.gif" alt="Dog nodding">
+  </section>
+
+  <section>
+    <h2>Review</h2>
+    <p>What is the difference between a markup language and a programming language?</p>
+    <img src="images/sealgif.gif" alt="Seal nodding">
+  </section>
+
+  <section>
+    <h2>Review</h2>
+    <p>What are the three languages used on the front-end?</p>
+    <img src="images/pandagif.gif" alt="Panda curiousity">
+  </section>
+
+  <section>
+    <h2>Review</h2>
+    <p>What is the one language that can be read by the browser on the front-end and the back-end?</p>
+    <img src="images/catread.gif" alt="Cat with glasses and open book">
+  </section>
+
+  <section>
+    <h2>Introduction to Markup Languages</h2>
+    <p>Read Introduction in Textbook</p>
+    <img src="images/HTMLBook.jpg" alt="HTML Book Icon">
+  </section>
+
+  <section>
+    <h1>HTML</h1>
+  </section>
+
+  <section>
+    <h1>HTML Exercise</h1>
+    <p>Sign up for an account at
+    <a target="_blank" href="https://www.codecademy.com/learn/learn-html">Codecademy</a>. Complete the <span class="orange">Introduction to HTML</span> course by the end of this unit.</p>
+    <a href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a><br>
+    <img src="images/exercise.gif" alt="Exercise time">
+  </section>
+
+    <!-- What is HTML?-->
+    <section>
+      <h3>What is HTML?</h3>
+      <p><span class="yellow">HTML</span> is the code that tells browsers to display the parts of the website that users see on their screens.</p>
+      <img height="350px" src="images/website.png" alt="Screenshot of the Girl Develop It Homepage">
+      <p>
+        <span class="fragment">images</span>   
+        <span class="fragment"> * text</span>   
+        <span class="fragment"> * videos</span>
+      </p>
+      <aside class="notes">Use HTML INTRO practice file and Codecademy's Intro to HTML/CSS</aside>
+    </section>
+
+    <!-- History of HTML-->
+    <section>
+      <h3>History of HTML</h3>
+      <ul>
+        <li class="fragment">Invented by Tim Berners-Lee</li>
+        <li class="fragment">Created "hypertext" to share scientific papers</li>
+        <li class="fragment">First web page August 6, 1991</li>
+        <li class="fragment">Standardized by w3 Consortium (pack of super nerds)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>History of HTML</h3>
+      <ul>
+        <li class="fragment"><span style="color:orange; font-weight:bold;">H</span>yper<span style="color:orange; font-weight:bold;">T</span>ext <span style="color:orange; font-weight:bold;">M</span>arkup <span style="color:orange; font-weight:bold;">L</span>anguage</li>
+        <li class="fragment">Early 90s</li>
+        <li class="fragment">HTML 4 in 1997</li>
+        <li class="fragment">XHTML in 2000</li>
+        <li class="fragment">HTML 5 in 2014</li>
+      </ul>
+      <br>
+      <img src="images/html5logo.png" alt="" class="fragment" style="width:250px;height:250px">
+      <aside class="notes"><a target="_blank" href="http://desource.uvu.edu/dgm/2120/in/steinja/lessons/03/03_02.html">XHTML</a></aside>
+    </section>
+
+    <section>
+      <h3>Anatomy of a website</h3>
+      <p>Concrete example:</p>
+      <ul>
+        <li>A paragraph is your <span style="color:yellow">content</span></li>
+        <li>Putting your content into an HTML tag to make it look like a paragraph is <span style="color:yellow">structure</span>
+<pre><code class ="html">&lt;p&gt;This is the content of my paragraph&lt;/p&gt;
+</code></pre>
+        </li>
+        <li>Making the font of your paragraph orange and 24px is <span style="color:yellow">presentation</span><br />
+        <p style="font-size:24px; color:orange;">This is the content of my paragraph.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>What does HTML look like?</h3>
+      <p>If you 'view the source', you see this:</p>
+      <img src ="images/devtools.png" alt="Screenshot of the Girl Develop It page source code">
+      <br>
+      <a target="_blank" href="https://developers.google.com/web/tools/chrome-devtools/?hl=en">Chrome Developer Tools</a>
+    </section>
+
+    <!-- HTML element-->
+    <section>
+      <h3>Anatomy of an HTML element</h3>
+      <ul>
+        <li><span class="yellow"><strong>Element</strong></span>
           <ul>
-            <li class="fragment">server</li>
-            <li class="fragment">application</li>
-            <li class="fragment">database</li>
+            <li>An individual component of HTML</li>
+            <li>Paragraph, heading, table, list, div, link, image, etc.</li>
           </ul>
-          <p class="fragment">Example: Everything that a customer sees on the webpage is the <span style="color:yellow">front-end</span>. Once that customer enters all of her information, such as name, billing address, destination, etc., the web application stores the information in a database that was created previously on the server in which the website is calling for information. That is all <span style="color:yellow">back-end</span>.</p>
-      </section>
-
-      <section>
-          <h2>Back-End Web Development</h2>
-          <p>The <span style="color:yellow">web application</span> creates, deletes, changes, renames, etc., items in the <span style="color:yellow">database</span>.</p>
-          <p>A <span style="color:yellow">server</span>, in the simplest form, is a computer accessed remotely that runs software to fulfill requests from clients.</p>
-      </section>
-
-      <section>
-          <h2>What's so special about JavaScript?</h2>
-          <p class="fragment">It is the only language on both the front-end and the back-end!</p>
-          <p class="fragment">Lots of great libraries and frameworks!</p>
+        </li>
+        <li><span class="yellow"><strong>Tag</strong></span>
           <ul>
-            <li class="fragment">Front-end: Angular, Backbone, React, Ember</li>
-            <li class="fragment">Server: Express, Node.js</li>
-            <li class="fragment">Database: MongoDB</li>
-          </ul>
-          <img src="images/js.jpg" style="width:350px;height:200px;" alt="JavaScript Logo" class="fragment">
-      </section>
-
-      <section>
-        <h2>Companies and Different Backend Languages</h2>
-        <img src="images/backend.png" alt="Lists of Backend Languages and Companies">
-        <aside class="notes"><a target="_blank" href="https://www.guru99.com/mean-stack-developer.html">MEAN stack</a>
-          <a target="_blank" href="https://www.ibm.com/cloud/learn/lamp-stack-explained">LAMP stack</a>
-        </aside>
-      </section>
-
-      <section>
-        <h2>Review</h2>
-        <p>What is the difference between front-end and back-end?</p>
-        <img src="images/doggif.gif" alt="Dog nodding">
-      </section>
-
-      <section>
-        <h2>Review</h2>
-        <p>What is the difference between a markup language and a programming language?</p>
-        <img src="images/sealgif.gif" alt="Seal nodding">
-      </section>
-
-      <section>
-        <h2>Review</h2>
-        <p>What are the three languages used on the front-end?</p>
-        <img src="images/pandagif.gif" alt="Panda curiousity">
-      </section>
-
-      <section>
-        <h2>Review</h2>
-        <p>What is the one language that can be read by the browser on the front-end and the back-end?</p>
-        <img src="images/pandagif.gif" alt="Panda curiousity">
-      </section>
-
-      <section>
-        <h2>Introduction to Markup Languages</h2>
-        <p>Read Introduction in Textbook</p>
-        <img src="images/HTMLBook.jpg" alt="HTML Book Icon">
-      </section>
-
-      <section>
-        <h1>HTML</h1>
-      </section>
-
-      <section>
-        <h1>HTML Exercise</h1>
-        <p>Sign up for an account at
-        <a target="_blank" href="https://www.codecademy.com/learn/learn-html">Codecademy</a>. Complete the Introduction to HTML course by the end of this unit.</p>
-        <a href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a><br>
-        <img src="images/exercise.gif" alt="Exercise time">
-      </section>
-
-        <!-- What is HTML?-->
-        <section>
-          <h3>What is HTML?</h3>
-          <p>HTML is the code that tells browsers to display the parts of the website that users see on their screens.</p>
-          <img height="350px" src="images/website.png" alt="Screenshot of the Girl Develop It Homepage">
-          <p>
-            <span class="fragment">images</span>   
-            <span class="fragment">text</span>   
-            <span class="fragment">videos</span>
-          </p>
-          <aside class="notes">Use HTML INTRO practice file and Codecademy's Intro to HTML/CSS</aside>
-        </section>
-
-        <!-- History of HTML-->
-        <section>
-          <h3>History of HTML</h3>
-          <ul>
-            <li class="fragment">Invented by Tim Berners-Lee</li>
-            <li class="fragment">Created "hypertext" to share scientific papers</li>
-            <li class="fragment">First web page August 6, 1991</li>
-            <li class="fragment">Standardized by w3 Consortium (pack of super nerds)</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>History of HTML</h3>
-          <ul>
-            <li class="fragment"><span style="color:orange; font-weight:bold;">H</span>yper<span style="color:orange; font-weight:bold;">T</span>ext <span style="color:orange; font-weight:bold;">M</span>arkup <span style="color:orange; font-weight:bold;">L</span>anguage</li>
-            <li class="fragment">Early 90s</li>
-            <li class="fragment">HTML 4 in 1997</li>
-            <li class="fragment">XHTML in 2000</li>
-            <li class="fragment">HTML 5 in 2014</li>
-          </ul>
-          <br>
-          <img src="images/html5logo.png" alt="" class="fragment" style="width:250px;height:250px">
-          <aside class="notes"><a href="http://desource.uvu.edu/dgm/2120/in/steinja/lessons/03/03_02.html">XHTML</a></aside>
-        </section>
-
-        <section>
-          <h3>Anatomy of a website</h3>
-          <p>Concrete example:</p>
-          <ul>
-            <li>A paragraph is your <span style="color:yellow">content</span></li>
-            <li>Putting your content into an HTML tag to make it look like a paragraph is <span style="color:yellow">structure</span>
-    <pre><code class ="html">&lt;p&gt;This is the content of my paragraph&lt;/p&gt;
-    </code></pre>
+            <li>Marks the beginning &amp; end of an element</li>
+            <li>Opening tag and Closing Tag</li>
+            <li>Tags contain characters that indicate the tag's purpose
+<pre><code class ="html">&lt;tagname&gt;Stuff in the middle&lt;/tagname&gt;</code></pre>
             </li>
-            <li>Making the font of your paragraph green and 24px is <span style="color:yellow">presentation</span><br />
-            <p style="font-size:24px; color:green;">This is the content of my paragraph.</p>
+            <li>
+<pre><code class ="html">&lt;p&gt; This is a sample paragraph.&lt;/p&gt;</code></pre>
             </li>
           </ul>
-        </section>
+        </li>
+      </ul>
+    </section>
 
-        <section>
-            <h3>What does HTML look like?</h3>
-            <p>If you 'view the source', you see this:</p>
-            <img src ="images/devtools.png" alt="Screenshot of the Girl Develop It page source code">
-            <br>
-            <a target="_blank" href="https://developers.google.com/web/tools/chrome-devtools/?hl=en">Chrome Developer Tools</a>
-          </section>
+    <!--anatomy of a tag -->
+    <section>
+      <h3>Tag Breakdown</h3>
+      <img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/tagbreakdown.png" alt="Tag breakdown" style="height:500px; width:500px" />
+    </section>
 
-        <!-- HTML element-->
-        <section>
-          <h3>Anatomy of an HTML element</h3>
-          <ul>
-            <li><strong>Element</strong>
-              <ul>
-                <li>An individual component of HTML</li>
-                <li>Paragraph, heading, table, list, div, link, image, etc.</li>
-              </ul>
-            </li>
-            <li><strong>Tag</strong>
-              <ul>
-                <li>Marks the beginning &amp; end of an element</li>
-                <li>Opening tag and Closing Tag</li>
-                <li>Tags contain characters that indicate the tag's purpose
-    <pre><code class ="html">&lt;tagname&gt;Stuff in the middle&lt;/tagname&gt;</code></pre>
-                </li>
-                <li>
-    <pre><code class ="html">&lt;p&gt; This is a sample paragraph.&lt;/p&gt;</code></pre>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
+    <section>
+      <h2>Examples of tags</h2>
+      <table>
+        <thead>
+        <tr class="fragment">
+          <th>Tag Name</th>
+          <th>Opening and Closing Tag(s)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="fragment">
+          <td>Paragraph</td>
+          <td><span class="aqua">&lt;p&gt; &lt;/p&gt;</span></td>
+        </tr>
+        <tr class="fragment">
+          <td>Heading</td>
+          <td><span class="aqua">&lt;h1&gt; &lt;/h1&gt;</span></td>
+        </tr>
+        <tr class="fragment">
+          <td>Image</td>
+          <td><span class="aqua">&lt;img /&gt;</span></td>
+        </tr>
+        <tr class="fragment">
+          <td>Anchor</td>
+          <td><span class="aqua">&lt;a&gt; &lt;/a&gt;</span></td>
+        </tr>
+        <tr class="fragment">
+          <td>List</td>
+          <td><span class="aqua">&lt;ul&gt; &lt;/ul&gt;</span></td>
+        </tr>
+      </tbody>
+      </table>
+    </section>
 
-        <!--anatomy of a tag -->
-        <section>
-          <h3>Tag Breakdown</h3>
-          <img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/tagbreakdown.png" alt="Tag breakdown" style="height:500px; width:500px" />
-        </section>
+    <section>
+      <h2>Let's Create Something for the Browser!</h2>
+      <iframe src="https://giphy.com/embed/xT0xehWXi0Am3sJB84" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </section>
 
-        <section>
-            <h2>Examples of tags</h2>
-            <table>
-              <thead>
-              <tr class="fragment">
-                <th>Tag Name</th>
-                <th>Opening and Closing Tag(s)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="fragment">
-                <td>Paragraph</td>
-                <td>&lt;p&gt; &lt;/p&gt;</td>
-              </tr>
-              <tr class="fragment">
-                <td>Heading</td>
-                <td>&lt;h1&gt; &lt;/h1&gt;</td>
-              </tr>
-              <tr class="fragment">
-                <td>Image</td>
-                <td>&lt;img /&gt;</td>
-              </tr>
-              <tr class="fragment">
-                <td>Anchor</td>
-                <td>&lt;a&gt; &lt;/a&gt;</td>
-              </tr>
-              <tr class="fragment">
-                <td>List</td>
-                <td>&lt;ul&gt; &lt;/ul&gt;</td>
-              </tr>
-            </tbody>
-            </table>
-          </section>
+    <section>
+      <h2>Text Editors</h2>
+      <p>For us to write or modify code, we will need to download a <span style="color:yellow;">Text Editor</span>. We use Visual Studio Code (VS Code).</p>
+      <img src="images/vsc.png" alt="Visual Studio Code Logo" width="250px">
+      <p><a target="_blank" href="https://docs.google.com/document/d/1pjsijV1nTBDa0nXSmUdCwNFWOEuMinx6bDKDIxjbcVk/edit?usp=sharing">These instructions</a> will help with download, setup, and creating a project folder!</p>
+      <a target="_blank" href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank" ><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a>
+    </section>
 
-        <section>
-          <h2>Let's Create Something for the Browser!</h2>
-          <iframe src="https://giphy.com/embed/xT0xehWXi0Am3sJB84" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        </section>
+    <section>
+      <h2>IDE's</h2>
+      <p><span style="color:orange">IDE</span> stands for <span style="color:orange; font-weight:bold;">I</span>ntegrated <span style="color:orange; font-weight:bold;">D</span>evelopment <span style="color:orange; font-weight:bold;">E</span>nvironment.</p>
+      <p>This is a fancy way of saying that your text editor has a lot of tools (e.g., running code, debugging) that makes it easier to write code well!</p>
+      <img src="images/smiley.gif" alt="Smiley Face Dance">
+      <p class="fragment">Guess what VS Code is?😊 <span class="fragment">Yes, VS Code is an IDE.🎉</span></p>
+    </section>
 
-        <section>
-            <h2>Text Editors</h2>
-            <p>For us to write or modify code. we will need to download a <span style="color:yellow;">Text Editor</span>. We will be using Visual Studio Code in this class.</p>
-            <img src="images/vsc.png" alt="Visual Studio Code Logo" width="250px">
-            <p>Download <a target="_blank" href="https://code.visualstudio.com/">here</a>.</p>
-            <a target="_blank" href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank" ><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a>
-          </section>
-    
-          <section>
-            <h2>IDE's</h2>
-            <p><span style="color:orange">IDE</span> stands for <span style="color:orange; font-weight:bold;">I</span>ntegrated <span style="color:orange; font-weight:bold;">D</span>evelopment <span style="color:orange; font-weight:bold;">E</span>nvironment.</p>
-            <p>This is a fancy way of saying that your text editor has a lot of tools (e.g., running code, debugging) that makes it easier to write code well!</p>
-            <img src="images/smiley.gif" alt="Smiley Face Dance">
-            <p class="fragment">Guess what Visual Studio Code is?</p>
-          </section>
-    
-          <section>
-            <h2>Start an HTML file in Visual Studio Code</h2>
-            <p>Your browser will look for an <span style="color:orange; font-weight:bold;">index.html</span> file first!</p>
-            <p class="fragment">There are two ways to create a new file:</p>
-            <ul>
-              <li class="fragment">Go to File > New File</li>
-              <li class="fragment">Click on "New File" in the Welcome tab.</li>
-            </ul>
-          </section>
+    <section>
+      <h2>Start an HTML file in VS Code</h2>
+      <p>Your browser will look for an <span style="color:orange; font-weight:bold;">index.html</span> file first!</p>
+      <p class="fragment">You can create a new file in your root folder in <span class="yellow">VS Code</span> in several ways:</p>
+      <ul>
+        <li class="fragment">Go to <span class="aqua">File</span> > <span class="aqua">New File</span></li>
+        <li class="fragment">Click on "<span class="aqua">New File</span>" in the <span class="aqua">Welcome</span> tab.</li>
+        <li class="fragment">In the left panel menu, <span class="aqua">hover</span> over the name of your project folder. Options will appear to its right. <span class="aqua">Click</span> the icon that is a piece of paper with a plus sign, name your file, then press <span class="aqua">return</span>.</li>
+      </ul>
+      <p class="fragment">Choose one of the steps above to create your <span class="aqua">index.html</span> file!</p>
+    </section>
 
-          <section>
-            <h1>HTML Structure</h1>
-          </section>
+    <section>
+      <h1>HTML Structure</h1>
+    </section>
 
     <!-- HTML Page-->
         <section>
           <h3>Doctype</h3>
-          <p>The ﬁrst thing on an HTML page is the <strong>doctype</strong>, which tells the browser which version of the markup language the page is using.</p>
+          <p>The ﬁrst thing on an HTML page is the <span class="aqua"><strong>doctype</strong></span>, which tells the browser which version of the markup language the page is using.</p>
 <pre><code class = "html" data-trim contenteditable>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
 4.01 Transitional//EN" "http://
 www.w3.org/TR/html4/loose.dtd"&gt;
 </code></pre>
 <pre><code class = "html" data-trim contenteditable>&lt;!DOCTYPE html&gt;
 </code></pre>
-        <p><small>* The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
-       </section>
+        <p><small>* The <span class="aqua">doctype</span> is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
+    </section>
 
-      <section>
-        <h3>HTML Tag</h3>
-        <p>After &lt;doctype&gt;, the page content must be contained between &lt;html&gt; tags.</p>
+    <section>
+      <h3>HTML Tag</h3>
+      <p>After <span class="aqua">&lt;doctype&gt;</span>, the page content must be contained between <span class="aqua">&lt;html&gt;</span> tags.</p>
 <pre><code class = "html" data-trim contenteditable>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
 &lt;/html&gt;
 </code></pre>
-      </section>
+    </section>
 
     <section>
       <h3>Head and Body Tags</h3>
-      <p><strong>Head:</strong> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes, like providing information to search engines.</p>
-      <p><strong>Body:</strong> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
+      <p><span class="yellow"><strong>Head</strong></span>: The <span class="aqua">head</span> tag contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes, like providing information to search engines.</p>
+      <p><span class="yellow"><strong></strong>Body</strong></span>: The <span class="aqua">body</span> tag contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
     </section>
 
     <section>
@@ -453,7 +489,7 @@ www.w3.org/TR/html4/loose.dtd"&gt;
       <h3>Nesting</h3>
       <p>All elements "nest" inside one another.</p>
       <p>Nesting is when you put containing tags inside other containing tags.</p>
-<pre><code class = "html fragment" data-trim contenteditable>
+<pre class="fragment"><code class = "html" data-trim contenteditable>
 &lt;body&gt;
   &lt;p&gt;I am now a paragraph tag nested inside the body tag.&lt;/p&gt;
 &lt;/body&gt;
@@ -463,11 +499,11 @@ www.w3.org/TR/html4/loose.dtd"&gt;
 
     <section>
       <h3>Nesting Order</h3>
-      <div style="width:40%; float:left;">
+      <div style="width:33%; float:left;">
         <img src = "images/owls.jpg" alt="Nesting owl dolls" style="width:500px; height:300px;"/>
         <p>Whichever element OPENS first <br/>CLOSES last</p>
       </div>
-      <div class="fragment" style="float:right; position:relative; top:-500px; left:30px;"
+      <div class="fragment" style="width:67%; float:left;"
       >
         <p>Which Owl Am I?</p>
 <pre><code class = "html" data-trim contenteditable>
@@ -494,12 +530,12 @@ www.w3.org/TR/html4/loose.dtd"&gt;
 
     <section>
       <h3>Nesting: Example</h3>
-      <p>Elements are 'nested' inside the &lt;body&gt; tag.</p>
+      <p>Elements are '<span class="orange">nested</span>' inside the <span class="aqua">&lt;body&gt;</span> tag.</p>
 <pre><code class="html" data-trim contenteditable>&lt;body&gt;
   &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
 &lt;/body&gt;
 </code></pre>
-      <p>Paragraphs 'nested' inside list items.</p>
+      <p>Paragraphs '<span class="orange">nested</span>' inside list items.</p>
 <pre><code class="html" data-trim contenteditable>&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
@@ -511,16 +547,16 @@ www.w3.org/TR/html4/loose.dtd"&gt;
     <section>
         <h3>Anatomy of an HTML element</h3>
         <ul>
-          <li><strong>Container Element</strong>
+          <li><span class="yellow"><strong>Container Element</strong></span>
             <ul>
               <li>An element that can contain other elements or
           content</li>
-              <li>A paragraph (&lt;p&gt;) contains text</li>
+              <li>A paragraph (<span class="aqua">&lt;p&gt;</span>) contains text</li>
             </ul>
           </li>
-          <li><strong>Empty (Standalone) Element</strong>
+          <li><span class="yellow"><strong>Empty (Standalone) Element</strong></span>
             <ul>
-              <li>An element that cannot contain anything else, often described as "self-closing."</li>
+              <li>An element that cannot contain anything else, often described as "<span class="orange">self-closing</span>."</li>
             </ul>
           </li>
         </ul>
@@ -544,6 +580,9 @@ www.w3.org/TR/html4/loose.dtd"&gt;
       <h3>Element: Paragraph</h3>
       <p>Paragraph tags contain text often found in the body of the document.</p>
       <p class="fragment">On this slide, can you guess which text is contained in a paragraph tag?</p>
+<pre class="fragment"><code class = "html" data-trim contenteditable>&lt;p&gt;Paragraph tags contain text often found in the body of the document.&lt;/p&gt;
+&lt;p&gt;On this slide, can you guess which text is contained in a paragraph tag?&lt;/p&gt;
+</code></pre>
     </section>
 
     <section>
@@ -626,12 +665,12 @@ www.w3.org/TR/html4/loose.dtd"&gt;
     <section>
       <h2>Semantic Tags</h2>
       <ul>
-        <li>Footer</li>
-        <li>Header</li>
-        <li>Section</li>
-        <li>Nav</li>
+        <li><span class="aqua">footer</span></li>
+        <li><span class="aqua">header</span></li>
+        <li><span class="aqua">section</span></li>
+        <li><span class="aqua">nav</span></li>
       </ul>
-      <p>Let's identify each one on a webpage!</p>
+      <p>Let's identify each one on a <a href="https://anniecannons.org" target="_blank">webpage</a>!</p>
     </section>
 
     <!-- Em and Strong-->
@@ -639,15 +678,16 @@ www.w3.org/TR/html4/loose.dtd"&gt;
       <h3>Formatted text</h3>
       <div>
         <div class="halfblock">
-<pre><code class="html" data-trim contenteditable>&lt;p&gt;
-This paragraph has &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;important&lt;/strong&gt; text.
+<pre><code class="html" data-trim contenteditable>
+&lt;p&gt;
+  This paragraph has &lt;em&gt;Emphasized&lt;/em&gt; text and &lt;strong&gt;Important&lt;/strong&gt; text.
 &lt;/p&gt;
 </code></pre>
         </div>
         <div class="halfblock">
           <p>This paragraph has <em>Emphasized</em> text and <strong>Important</strong> text.</p>
         </div>
-        <p class="clear"><small>* Notice: <span style="color:orange; font-weight:bold;">em</span> and <span style="color:orange; font-weight:bold;">strong</span> are meant to indicate meaning through style. If you want to have italicized text for appearance and not to communicate meaning, then use CSS.</small></p>
+        <p class="clear"><small>* Notice: <span style="color:orange; font-weight:bold;">em</span> and <span style="color:orange; font-weight:bold;">strong</span> are meant to indicate meaning through style.<br>For italicized text in appearance sans meaning, use CSS.</small></p>
       </div>
     </section>
 
@@ -701,18 +741,18 @@ This paragraph has &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;import
         <h3>Example: Unordered and Ordered Lists</h3>
         <div>
           <div class="halfblock">
-    <pre><code class="html" data-trim contenteditable>
-  &lt;ul&gt;
-    &lt;li&gt;January&lt;/li&gt;
-    &lt;li&gt;February&lt;/li&gt;
-  &lt;/ul&gt;
-    </code></pre>
-    <pre><code class="html" data-trim contenteditable>
-  &lt;ol&gt;
-    &lt;li&gt;Wake up.&lt;/li&gt;
-    &lt;li&gt;Brush teeth.&lt;/li&gt;
-  &lt;/ol&gt;
-    </code></pre>
+  <pre><code class="html" data-trim contenteditable>
+&lt;ul&gt;
+  &lt;li&gt;January&lt;/li&gt;
+  &lt;li&gt;February&lt;/li&gt;
+&lt;/ul&gt;
+  </code></pre>
+  <pre><code class="html" data-trim contenteditable>
+&lt;ol&gt;
+  &lt;li&gt;Wake up.&lt;/li&gt;
+  &lt;li&gt;Brush teeth.&lt;/li&gt;
+&lt;/ol&gt;
+  </code></pre>
         </div>
         <div class="halfblock">
           <p>Unordered list (bullets)</p>
@@ -754,10 +794,10 @@ This paragraph has &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;import
         <h3>Comments</h3>
         <p class="fragment">Imagine a file that has <span style="font-style:italic;">thousands</span> of lines of code. <br/>How do we break it up to be more readable?</p>
         <p class="fragment">You can add <span style="color: orange;">comments</span> to your code that will not be seen by the browser, but only visible when viewing the code.</p>
-  <pre><code class="html fragment" data-trim contenteditable>&lt;!-- Comment goes here --&gt;
+  <pre class="fragment"><code class="html" data-trim contenteditable>&lt;!-- Comment goes here --&gt;
   </code></pre>
-      <p class="fragment"><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. You can also 'comment out' large chunks of code to hide it from the browser.</small></p>
-  <pre><code class="html fragment" data-trim contenteditable>
+      <p class="fragment"><small>Comments help organize your code into sections so you (or someone else) can easily understand your code. You can also 'comment out' large chunks of code to hide it from the browser.</small></p>
+  <pre class="fragment"><code class="html" data-trim contenteditable>
 &lt;!-- Beginning of header --&gt;
   &lt;div id="header"&gt;Header Content &lt;/div&gt;
 &lt;!-- End of header --&gt;
@@ -784,34 +824,39 @@ End of comment block -->
       <section>
         <h3>HTML Links: An Exploration</h3>
         <p>How does a link in your browser know where to show up in the code?</p>
-        <p class="fragment">Links are "anchored" to the item that you want users to be able to click on. Users commonly click on:</p>
-        <ul>
-          <li class="fragment">text</li>
-          <li class="fragment">images</li>
-          <li class="fragment">email/phone icons</li>
-        </ul>
-        <p class="fragment">Link tags make the above clickable. So what kind of element is link tag -- container or empty?</p>
+        <p class="fragment">Links are "anchored" to the item that you want users to be able to click on.</p>
+        <div class="fragment">Users commonly click on:</p>
+          <ul>
+            <li >text</li>
+            <li class="fragment">images</li>
+            <li class="fragment">email/phone icons</li>
+          </ul>
+        </div>
+        <p class="fragment">Anchor tags <span class="aqua">&lt;a&gt;</span> make the above clickable. So what kind of element is an anchor tag -- container or empty?</p>
+        <p class="fragment"><span class="aqua">&lt;a&gt;</span> <span class="aqua">&lt;/a&gt;</span></p>
       </section>
 
     <section>
         <h3>Anatomy of an HTML element</h3>
-        <ul>
-          <li><strong>Attribute</strong>
+        <p>Opening tags can give us more information about an element.</p>
+        <ul class="fragment">
+          <li><span class="yellow"><strong>Attribute</strong></span>
             <ul>
-              <li class="fragment">Provides additional information about the HTML element</li>
-              <li class="fragment">Class, ID, language, style, identity, source</li>
-              <li class="fragment">Placed inside an opening tag, before the right angle bracket.</li>
+              <li class="fragment">Provides additional information about the element</li>
+              <li class="fragment">class, identity, language, style, source</li>
+              <li class="fragment">Placed inside an opening tag, before the right angle bracket</li>
             </ul>
           </li>
-          <li class="fragment"><strong>Value</strong></li>
+<pre class="fragment" style="margin-top: 0px;" data-trim contenteditable><code class ="html">&lt;button disabled&gt;Submit&lt;/button&gt;</code></pre>
+          <li class="fragment"><span class="yellow"><strong>Value</strong></span></li>
             <ul>
               <li class="fragment">Value is the value assigned to a given attribute.</li>
               <li class="fragment">Values must be contained inside quotation marks.</li>
             </ul>
           </ul>
-          <p class="fragment">Example: Link Tag Scavenger Hunt</p>
-  <pre class="fragment" data-trim contenteditable><code class ="html">&lt;a href="http://anniecannons.com"&gt;AnnieCannons&lt;/a&gt;</code></pre>
-
+          <div class="fragment"><p>Example: Anchor Tag Scavenger Hunt</p>
+  <pre style="margin-top: -10px;" data-trim contenteditable><code class ="html">&lt;a href="http://anniecannons.com"&gt;AnnieCannons&lt;/a&gt;</code></pre>
+          </div>
       </section>
 
     <!-- Links-->
@@ -819,28 +864,31 @@ End of comment block -->
       <h3>Element: Link</h3>
       <p>Links have three components</p>
       <ul>
-        <li>Tag: &lt;a>&lt;/a></li>
-        <li>Href attribute: "http://www.anniecannons.com"</li>
-        <li>Link text: "AnnieCannons"</li>
+        <li>Tag: <span class="aqua">&lt;a>&lt;/a></span></li>
+        <li><span class="aqua">href</span> attribute: <span class="aqua">"http://www.anniecannons.com"</span></li>
+        <li>Link text: "<span class="aqua">AnnieCannons</span>"</li>
       </ul>
 <pre><code class="html" data-trim contenteditable>&lt;a href="http://anniecannons.com"&gt;AnnieCannons&lt;/a&gt;
 </code></pre>
-      <p><a href ="http://www.anniecannons.com" title="AnnieCannons">AnnieCannons</a></p>
-      <p>The &lt;a&gt; tag surrounds text or images or other HTML elements to turn them into links.</p>
-      <p class="fragment">The awesome thing about Visual Studio Code...<span class="fragment">is that it autofills for you. Let's try it! &#128170;</span></p>
+      <p><a target="_blank" href ="http://www.anniecannons.com" title="AnnieCannons">AnnieCannons</a></p>
+      <p>The <span class="aqua">&lt;a&gt;</span> tag surrounds text or images or other HTML elements to turn them into links.</p>
+      <p class="fragment">The awesome thing about VS Code...<span class="fragment">is that it autofills for you. Let's try it! &#128170;</span></p>
     </section>
 
     <!-- Link Attributes -->
     <section>
       <h3>Link Attributes</h3>
-      <p>Links can have attributes that tell the link to do different actions like open in a new tab, or launch your e-mail program.</p>
+      <p>Links can have attributes that tell the link to do different actions like open in a new tab...</p>
 <pre><code class="html">&lt;a href="home.html" target="_blank"&gt;Link Text&lt;/a&gt;
 </code></pre>
-      <p><small>Link opens in a new window/tab with <strong>target="_blank"</strong></small></p>
+      <p><small>Link opens in a new window/tab with <strong class="aqua">target="_blank"</strong></small></p>
       <!-- Change email to fit your chapter's needs-->
+      <div class="fragment">
+        <p>...or launch your e-mail program.</p>
 <pre><code class="html">&lt;a href="mailto:info@anniecannons.com"&gt;E-mail us!&lt;/a&gt;
 </code></pre>
-      <p><small>Adding <strong>mailto:</strong> directly before the email address means the link will open in the default email program.</small></p>
+      <p><small>Adding <strong class="aqua">mailto:</strong> directly before the email address means the link will open in the default email program.</small></p>
+      </div>
       <p class="fragment">What else can a link tag do? Let's <a href="https://google.com" target="_blank">GTS</a> - Google That Stuff!</p>
     </section>
 
@@ -878,21 +926,23 @@ End of comment block -->
       <h3>Element: Image</h3>
       <p>Images have three components</p>
       <ul>
-        <li>Tag: &lt;img /&gt;</li>
-        <li>Src attribute: <span class="small">"https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg"</span></li>
-        <li>Alt attribute: "Cute Panda"</li>
+        <li>Tag: <span class="aqua">&lt;img /&gt;</span></li>
+        <li><span class="aqua">src</span> attribute: <span class="small aqua">"https://www.publicdomainpictures.net/pictures/360000/velka/panda-in-chiangmai-zoo-thailand-1594485630URd.jpg"</span></li>
+        <li>Alt attribute: <span class="aqua">"Cute Panda"</span></li>
       </ul>
-<pre><code class="html">&lt;img src="https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg"
+<pre><code class="html">&lt;img src="https://www.publicdomainpictures.net/pictures/360000/velka/panda-in-chiangmai-zoo-thailand-1594485630URd.jpg"
 alt="Cute Panda"/&gt;
 </code></pre>
-      <p><small>* Notice: This tag is our first example of a empty or standalone or "self-closing" element.</small></p>
+      <p><small>* Notice: This tag is our first example of an <span class="yellow">empty</span> or <span class="yellow">standalone</span> or "<span class="yellow">self-closing</span>" element.</small></p>
+      <img width="200px" src="https://www.publicdomainpictures.net/pictures/360000/velka/panda-in-chiangmai-zoo-thailand-1594485630URd.jpg"
+alt="Cute Panda"/>
     </section>
 
      <!-- relative & absolute links -->
      <section>
         <h3>Relative vs. Absolute paths for links &amp; images</h3>
         <ul>
-          <li class="fragment"><strong>Relative</strong><br />
+          <li class="fragment"><span class="yellow"><strong>Relative</strong></span><br />
             <ul>
               <li>Relative paths change depending upon directory structure.</li>
               <ul>
@@ -904,7 +954,7 @@ alt="Cute Panda"/&gt;
           
           
           </li>
-          <li class="fragment"><strong>Absolute</strong><br />
+          <li class="fragment"><span class="yellow"><strong>Absolute</strong></span><br />
           <ul>
             <li class="fragment">Absolute paths refer to a specific location of a file, including the domain. <small><code>"http://www.anniecannons.com/volunteers"</code></small></li>
             <li class="fragment">Typically used when pointing to a link that is not within your own domain.</li>
@@ -935,9 +985,9 @@ alt="Cute Panda"/&gt;
       <div>
         <div class="halfblock">
 <pre><code class="html">&lt;p&gt;
-Hello &lt;br/&gt;
-It's me &lt;br/&gt;
-I was wondering if after all these years you'd like to meet &lt;br/&gt;
+  Hello &lt;br/&gt;
+  It's me &lt;br/&gt;
+  I was wondering if after all these years you'd like to meet &lt;br/&gt;
 &lt;/p&gt;
 </code></pre>
         </div>
@@ -970,7 +1020,7 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
       <p>Tables are made up of rows and columns.</p>
       <div>
         <div class="halfblock">
-<pre><code class="html" data-trim contenteditable="">
+<pre><code class="html" data-trim contenteditable>
 &lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Head&lt;/th&gt;
@@ -1008,7 +1058,7 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
     <section>
       <h3>Tables: Examples</h3>
       <p>Tables can be styled with CSS to add zebra striping or to highlight important rows/columns.</p>
-      <img src="images/zebra.gif" alt="Example of tables" />
+      <img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/zebra.gif" alt="Example of tables" />
     </section>
 
     <section>
@@ -1021,8 +1071,10 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
       <h2>Table Exercise</h2>
       <p>Make this table. Take a screenshot of your code in VSC.</p>
       <img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" height="150px" src="images/table.png" alt="Simple Table"> <br/>
-      <a href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank"><img class="fragment" height="30px" src="images/trello-logo-blue.png" alt="Trello logo"></a><br style="line-height:0px"/>
-      <img src="images/exercise.gif" alt="Exercise Time">
+      <div>
+        <a href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a><br>
+        <img style="margin-top: 0px; height: 240px;" src="images/exercise.gif" alt="Exercise time!">
+      </div>
     </section>
 
     <section>
@@ -1061,9 +1113,9 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
   <textarea cols="30" rows="10"></textarea>
 </form>
 </code></pre>
-  <form action="">
-    <input type="text"><br>
-    <input type="password"><br>
+  <form>
+    <input type="text">
+    <input type="password">
     <textarea cols="30" rows="10"></textarea>
   </form>
     </section>
@@ -1164,12 +1216,13 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
       <img data-enlargable width="200px" style="border: 5px solid blue; cursor: zoom-in" height="200px" src="images/form.png" alt="Simple Form"/><br/><a href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a>
       <br/>
       <img src="images/exercise.gif" alt="Exercise Time!">
+      <aside class="notes">Forms resource: https://www.justinmind.com/blog/20-form-examples-web-mobile/</aside>
     </section>
 
       <!-- Develop it -->
       <section>
           <h3>Let's practice!</h3>
-          <p>Download the HTML file <a  target="_blank" href="https://github.com/AnnieCannons/ac-intro-programming/blob/master/Exercises/HTML%20INTRO.html">here</a>.</p>
+          <p>Download the HTML file <a target="_blank" href="https://github.com/AnnieCannons/ac-intro-programming/blob/master/Exercises/HTML%20INTRO.html">here</a>.</p>
           <p>Fill in the sections where there are directions in the comments.</p>
           <a href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a>
         <br/>
@@ -1181,16 +1234,18 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
       <h2>HTML Resources</h2>
       <ul>
         <li class="fragment"><a target="_blank" href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
-        <li class="fragment"><a target="_blank" href="https://www.webplatform.org/">Opera Web Standards</a></li>
+        <li class="fragment"><a target="_blank" href="https://webplatform.github.io/docs/html/">Opera Web Standards</a></li>
         <li class="fragment"><a target="_blank" href="http://stackoverflow.com/">Stack Overflow</a></li>
       </ul>
+      <aside class="notes">Opera Web Standards site may have some things that are deprecated by now and may not be up-to-date with the latest technologies post-2015. (HTML5 released in 2014. HTML5.1 released in 2016. HTML5.2 released in 2017.)
+      </aside>
     </section>
 
     <section>
           <h3>GDI Website</h3>
           <a href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a><br/>
           <img src="images/exercise.gif" alt="Exercise time"/>
-          <p>By the end of the class, you will have built a simple site using HTML and contructed a login form. <p>
+          <p>By the end of the class, you will have built a simple site using HTML and constructed a login form. <p>
     </section>
 
     <section>
@@ -1217,8 +1272,8 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
 <p>Essum magis kohlrabi welsh onion daikon lettuce.</p>
 <p>Amaranth tatsoi tomatillo melon azuki bean garlic.</p>
 </code></pre>
-      <p class="fragment">How do you change the color of only one word (e.g., kohlrabi) and not the whole paragraph?</p>
-<pre><code class="html fragment" data-trim contenteditable>
+      <p class="fragment">How do we use HTML to help change the color of only one word (e.g., kohlrabi) and not the whole paragraph?</p>
+<pre class="fragment"><code class="html" data-trim contenteditable>
 <p>Veggies es bonus vobis, proinde vos postulo</p>
 <p>Essum magis <span>kohlrabi</span> welsh onion daikon lettuce.</p>
 <p>Amaranth tatsoi tomatillo melon azuki bean garlic.</p>
@@ -1254,10 +1309,11 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
   <section>
     <h2>Adding media to your site</h2>
     <ul>
-      <li class="fragment">iFrame tags (Page 189)</li>
-      <li class="fragment">video tags (Page 214)</li>
-      <li class="fragment">audio tags (Page 219)</li>
+      <li class="fragment"><span class="aqua">iframe</span> tags (Page 189)</li>
+      <li class="fragment"><span class="aqua">video</span> tags (Page 214)</li>
+      <li class="fragment"><span class="aqua">audio</span> tags (Page 219)</li>
     </ul>
+    <aside class="notes">iframes is short for inline frames.</aside>
   </section>
 
   <section>
@@ -1268,7 +1324,7 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
 
   <section>
       <h3>Project</h3>
-      <p>Create a HTML website with the following features:</p>
+      <p>Create an HTML website with the following features:</p>
       <div style="float:left;">
         <a href="https://trello.com/b/QOMmCokd/template-student-journey-phase-21-html-tasks" target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a><br>
         <img src="images/exercise.gif" alt="Exercise time!">
@@ -1277,7 +1333,7 @@ I was wondering if after all these years you'd like to meet &lt;br/&gt;
         <ol>
           <li>A linked image.</li>
           <li>A table with two rows. The second row contains an image in each cell.</li>
-          <li>An iFrame.</li>
+          <li>An iframe.</li>
           <li>A div wrapped around a group of elements.</li>
           <li>A form with 5 different types of form controls.</li>
         </ol>
