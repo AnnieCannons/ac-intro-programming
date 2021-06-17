@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1824px) {
+  .widescreen-monitor {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 1823px) {
+  .widescreen-monitor {
+    width: 40vw;
+  }
+}
