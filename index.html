@@ -62,7 +62,7 @@
       <section> 
           <h2>Programming Languages</h2>
           <p class="fragment">Programming languages have commands and constraints to tell the computer what to do. One command cannot do every little thing.</p> 
-          <p class="fragment" style="color:#77A58F">Programmers must understand the set of commands a programming language allows her to do.</p>
+          <p class="fragment" style="color:#77A58F">Programmers must understand the set of commands a programming language allows them to do.</p>
           <p class="fragment">The programmer must use their creativity and problem-solving skills to get the computer to do what they want.</p>
       </section>
 
@@ -419,15 +419,21 @@
     </section>
 
     <section>
+      <h2>Tour of VS Code</h2>
+      <p>Let's see what an IDE can do!</p>
+      <iframe src="https://giphy.com/embed/rrFcUcN3MFmta" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </section>
+
+    <section>
       <h2>Start an HTML file in VS Code</h2>
       <p>Your browser will look for an <span style="color:orange; font-weight:bold;">index.html</span> file first!</p>
-      <p class="fragment">You can create a new file in your root folder in <span class="yellow">VS Code</span> in several ways:</p>
-      <ul>
-        <li class="fragment">Go to <span class="aqua">File</span> > <span class="aqua">New File</span></li>
-        <li class="fragment">Click on "<span class="aqua">New File</span>" in the <span class="aqua">Welcome</span> tab.</li>
-        <li class="fragment">In the left panel menu, <span class="aqua">hover</span> over the name of your project folder. Options will appear to its right. <span class="aqua">Click</span> the icon that is a piece of paper with a plus sign, name your file, then press <span class="aqua">return</span>.</li>
-      </ul>
-      <p class="fragment">Choose one of the steps above to create your <span class="aqua">index.html</span> file!</p>
+      <p class="fragment">You can create a new file in your root folder in <span class="yellow">VS Code</span>:</p>
+      <ol>
+        <li class="fragment">In the left panel Explorer menu, <span class="aqua">hover</span> over the name of your project folder. Options will appear to its right.</li>
+        <li class="fragment"><span class="aqua">Click</span> the icon that is a piece of paper with a plus sign. A blinking cursor in a blank file appears in your root folder.</li>
+        <li class="fragment">Type the name of your file (<span style="color:orange; font-weight:bold;">index.html</span>), then press <span class="aqua">return</span>.</li>
+      </ol>
+      <p class="fragment">Congrats! You just created your <span class="aqua">index.html</span> file!</p>
     </section>
 
     <section>
@@ -438,10 +444,14 @@
         <section>
           <h3>Doctype</h3>
           <p>The ﬁrst thing on an HTML page is the <span class="aqua"><strong>doctype</strong></span>, which tells the browser which version of the markup language the page is using.</p>
+          <!-- HTML 4.01 strict doctype declaration  -->
+          <p>HTML 4.01 strict doctype declaration:</p>
 <pre><code class = "html" data-trim contenteditable>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
 4.01 Transitional//EN" "http://
 www.w3.org/TR/html4/loose.dtd"&gt;
 </code></pre>
+          <!-- HTML 5 and beyond doctype declaration -->
+          <p>HTML 5 and beyond doctype declaration:</p>
 <pre><code class = "html" data-trim contenteditable>&lt;!DOCTYPE html&gt;
 </code></pre>
         <p><small>* The <span class="aqua">doctype</span> is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
@@ -1313,12 +1323,13 @@ alt="Cute Panda"/>
       <li class="fragment"><span class="aqua">video</span> tags (Page 214)</li>
       <li class="fragment"><span class="aqua">audio</span> tags (Page 219)</li>
     </ul>
-    <aside class="notes">iframes is short for inline frames.</aside>
+    <aside class="notes">iFrames is short for inline frames.</aside>
   </section>
 
   <section>
     <h2>Review Additional Markup and Media</h2>
-    <p>Chapters 8 - 9</p>
+    <p>Chapter 8 + Chapter 9 sans Flash<br>
+      (Pages 212, 213, 216, 217, 220-222, 224, 226-228)</p>
     <img src="images/HTMLBook.jpg" alt="HTML textbook">
   </section>
 
@@ -1333,7 +1344,7 @@ alt="Cute Panda"/>
         <ol>
           <li>A linked image.</li>
           <li>A table with two rows. The second row contains an image in each cell.</li>
-          <li>An iframe.</li>
+          <li>An iFrame.</li>
           <li>A div wrapped around a group of elements.</li>
           <li>A form with 5 different types of form controls.</li>
         </ol>
